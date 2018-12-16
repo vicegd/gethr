@@ -8,8 +8,8 @@ Description: More about what it does (maybe more than one line)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-URL: http://yihui.name/knitr/
-BugReports: https://github.com/yihui/knitr/issues
+URL: https://github.com/vicegd/gethr
+BugReports: https://github.com/vicegd/gethr/issues
 Imports:
     jsonlite,
     httr
