@@ -1,0 +1,19 @@
+Package: gethr
+Type: Package
+Title: Access to Ethereum-based blockchains through Geth nodes
+Version: 0.1.0
+Authors@R: person("Vicente", "García Díaz", email = "garciavicente@uniovi.es", role = c("aut", "cre"))
+Description: More about what it does (maybe more than one line)
+    Use four spaces when indenting paragraphs within the Description.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+URL: http://yihui.name/knitr/
+BugReports: https://github.com/yihui/knitr/issues
+Imports:
+    jsonlite,
+    httr
+Suggests:
+    stats,
+    stats4
+RoxygenNote: 6.1.1
