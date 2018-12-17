@@ -9,7 +9,8 @@ eth_getCode(address, number = "latest")
 \arguments{
 \item{address}{Address - Address to get the code.}
 
-\item{number}{Integer|Tag - Block number, or the string "latest", "earliest" or "pending".}
+\item{number}{Integer|Tag - Block number, or the string 'latest', 'earliest'
+or 'pending'.}
 }
 \value{
 Data - Code from the given address.
@@ -19,9 +20,9 @@ Data - Code from the given address.
 }
 \examples{
 \donttest{
-eth_getCode("0xcaf9a0356ddfa779fdbb55c45b22d35673550f30")
-eth_getCode("0xcaf9a0356ddfa779fdbb55c45b22d35673550f30", "earliest")
-eth_getCode("0xcaf9a0356ddfa779fdbb55c45b22d35673550f30", 25)
+eth_getCode('0xcaf9a0356ddfa779fdbb55c45b22d35673550f30')
+eth_getCode('0xcaf9a0356ddfa779fdbb55c45b22d35673550f30', 'earliest')
+eth_getCode('0xcaf9a0356ddfa779fdbb55c45b22d35673550f30', 25)
 }
 
 }

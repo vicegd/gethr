@@ -16,8 +16,8 @@ Integer - Value in decimal.
 \code{hex_to_dec} returns the value in decimal.
 }
 \examples{
-hex_to_dec("0x28")
-hex_to_dec("0xd9190")
+hex_to_dec('0x28')
+hex_to_dec('0xd9190')
 
 }
 \seealso{

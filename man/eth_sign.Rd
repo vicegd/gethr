@@ -18,11 +18,14 @@ Data - Signature.
 \code{eth_sign} returns an Ethereum specific signature with \code{keccak256}.
 }
 \details{
-By adding a prefix to the message makes the calculated signature recognisable as an Ethereum specific signature. This prevents misuse where a malicious DApp can sign arbitrary data (e.g. transaction) and use the signature to impersonate the victim. Note the address to sign with must be unlocked.
+By adding a prefix to the message makes the calculated signature recognisable
+as an Ethereum specific signature. This prevents misuse where a malicious
+DApp can sign arbitrary data (e.g. transaction) and use the signature to
+impersonate the victim. Note the address to sign with must be unlocked.
 }
 \examples{
 \donttest{
-eth_sign("0xb117a8bc3ecf2c3f006b89da6826e49b4193977a", "hello world")
+eth_sign('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a', 'hello world')
 }
 
 }

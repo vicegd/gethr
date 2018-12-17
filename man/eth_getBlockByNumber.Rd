@@ -7,17 +7,21 @@
 eth_getBlockByNumber(number = "latest", full = TRUE, hex = TRUE)
 }
 \arguments{
-\item{number}{Integer|Tag - Block number, or the string "latest", "earliest" or "pending".}
+\item{number}{Integer|Tag - Block number, or the string 'latest', 'earliest'
+or 'pending'.}
 
-\item{full}{Boolean - If \code{true} it returns the full transaction objects, if \code{false} only the hashes of the transactions.}
+\item{full}{Boolean - If \code{true} it returns the full transaction objects,
+if \code{false} only the hashes of the transactions.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
 Object - A block object, or \code{null} when no block was found.
 }
 \description{
-\code{eth_getBlockByNumber} returns information about a block by block number.
+\code{eth_getBlockByNumber} returns information about a block by block
+number.
 }
 \examples{
 \donttest{

@@ -17,7 +17,7 @@ String - Public key that corresponds to a key pair ID.
 }
 \examples{
 \donttest{
-shh_getPublicKey("7ade0794bf59b9a4508a3c5d7d3408f910fc575fb2f31845da7611cae6664448")
+shh_getPublicKey('7ade0794bf59b9a4508a3c5d7d3408f910fc575fb2f31845da7611cae6664448')
 }
 
 }

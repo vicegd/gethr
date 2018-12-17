@@ -13,7 +13,8 @@ debug_getBlockRlp(number)
 Data - Recursive Length Prefix of the block.
 }
 \description{
-\code{debug_getBlockRlp} retrieves and returns the Recursive Length Prefix by number of block.
+\code{debug_getBlockRlp} retrieves and returns the Recursive Length Prefix by
+number of block.
 }
 \examples{
 \donttest{

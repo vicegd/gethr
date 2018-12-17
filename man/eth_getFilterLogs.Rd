@@ -9,17 +9,19 @@ eth_getFilterLogs(id, hex = TRUE)
 \arguments{
 \item{id}{Integer - Filter Id.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
 Array of Object - Logs for a given filter.
 }
 \description{
-\code{eth_getFilterLogs} returns an array of all logs matching filter with given id.
+\code{eth_getFilterLogs} returns an array of all logs matching filter with
+given id.
 }
 \examples{
 \donttest{
-eth_getFilterLogs("0x75c1c2893a789a4cfb8e146464ea622b")
+eth_getFilterLogs('0x75c1c2893a789a4cfb8e146464ea622b')
 }
 
 }

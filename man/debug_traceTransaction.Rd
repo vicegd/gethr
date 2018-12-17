@@ -11,26 +11,36 @@ debug_traceTransaction(hash, disableStorage = NULL,
 \arguments{
 \item{hash}{Data - Hash of the transaction.}
 
-\item{disableStorage}{Boolean - Setting this to \code{true} will disable storage capture (default = \code{false}).}
+\item{disableStorage}{Boolean - Setting this to \code{true} will disable
+storage capture (default = \code{false}).}
 
-\item{disableMemory}{Boolean - Setting this to \code{true} will disable memory capture (default = \code{false})}
+\item{disableMemory}{Boolean - Setting this to \code{true} will disable
+memory capture (default = \code{false})}
 
-\item{disableStack}{Boolean - Setting this to \code{true} will disable stack capture (default = \code{false})}
+\item{disableStack}{Boolean - Setting this to \code{true} will disable stack
+capture (default = \code{false})}
 
-\item{tracer}{String - Setting this will enable JavaScript-based transaction tracing. If set, the previous arguments will be ignored.}
+\item{tracer}{String - Setting this will enable JavaScript-based transaction
+tracing. If set, the previous arguments will be ignored.}
 
-\item{timeout}{String -  Overrides the default timeout of 5 seconds for JavaScript-based tracing calls.}
+\item{timeout}{String -  Overrides the default timeout of 5 seconds for
+JavaScript-based tracing calls.}
 }
 \value{
 Object - Full trace of the transaction.
 }
 \description{
-\code{debug_traceTransaction} attempts to run the transaction in the exact same manner as it was executed on the network. It will replay any transaction that may have been executed prior to this one before it will finally attempt to execute the transaction that corresponds to the given hash.
+\code{debug_traceTransaction} attempts to run the transaction in the exact
+same manner as it was executed on the network. It will replay any transaction
+that may have been executed prior to this one before it will finally attempt
+to execute the transaction that corresponds to the given hash.
 }
 \examples{
 \donttest{
-debug_traceTransaction("0xe45f738135240ce9cedc58b21148ef424704e5c86798990a5a36cb1ca4c5c3f4")
-debug_traceTransaction("0xe45f738135240ce9cedc58b21148ef424704e5c86798990a5a36cb1ca4c5c3f4", disableStorage = TRUE, disableStack = TRUE)
+debug_traceTransaction('0xe45f738135240ce9cedc58b21148ef424704e5c86798990a5
+a36cb1ca4c5c3f4')
+debug_traceTransaction('0xe45f738135240ce9cedc58b21148ef424704e5c86798990a5
+a36cb1ca4c5c3f4', disableStorage = TRUE, disableStack = TRUE)
 }
 
 }

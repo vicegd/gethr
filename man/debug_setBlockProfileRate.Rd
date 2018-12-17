@@ -7,10 +7,12 @@
 debug_setBlockProfileRate(rate)
 }
 \arguments{
-\item{rate}{Integer - Rate of the profiling. A non-zero rate enables block profiling, setting it to zero stops the profile.}
+\item{rate}{Integer - Rate of the profiling. A non-zero rate enables block
+profiling, setting it to zero stops the profile.}
 }
 \description{
-\code{debug_setBlockProfileRate} sets the rate (in samples/sec) of goroutine block profile data collection.
+\code{debug_setBlockProfileRate} sets the rate (in samples/sec) of goroutine
+block profile data collection.
 }
 \examples{
 \donttest{

@@ -7,10 +7,12 @@
 eth_syncing()
 }
 \value{
-Object|Boolean - An object with sync status data or \code{false}, when not syncing.
+Object|Boolean - An object with sync status data or \code{false},
+  when not syncing.
 }
 \description{
-\code{eth_syncing} returns an object with data about the sync status or \code{false}.
+\code{eth_syncing} returns an object with data about the sync status or
+\code{false}.
 }
 \examples{
 \donttest{

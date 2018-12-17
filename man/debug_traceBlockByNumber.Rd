@@ -13,7 +13,8 @@ debug_traceBlockByNumber(number)
 Object - Full stack trace of the block.
 }
 \description{
-\code{debug_traceBlockByNumber} returns a full stack trace of all invoked opcodes of all transaction that were included included in this block.
+\code{debug_traceBlockByNumber} returns a full stack trace of all invoked
+opcodes of all transaction that were included included in this block.
 }
 \examples{
 \donttest{

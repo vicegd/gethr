@@ -11,17 +11,20 @@ eth_getUncleByBlockHashAndIndex(block_hash, uncle_index, hex = TRUE)
 
 \item{uncle_index}{Integer - Uncle index position.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
 Object - A block object, or \cite{null} when no block was found.
 }
 \description{
-\code{eth_getUncleByBlockHashAndIndex} returns information about a uncle of a block by hash and uncle index position.
+\code{eth_getUncleByBlockHashAndIndex} returns information about a uncle of a
+block by hash and uncle index position.
 }
 \examples{
 \donttest{
-eth_getUncleByBlockHashAndIndex("0xb69e76f3997f318f4385f31885576aa43cb40ad4ed8938718e150320ff48f528", 1)
+eth_getUncleByBlockHashAndIndex('0xb69e76f3997f318f4385f31885576aa43cb40ad4ed
+8938718e150320ff48f528', 1)
 }
 
 }

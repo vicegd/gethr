@@ -10,15 +10,18 @@ admin_addPeer(enode)
 \item{enode}{String - URL of the remote peer to start tracking.}
 }
 \value{
-Boolean - \code{true} the peer was accepted for tracking or \code{false} if some error occurred.
+Boolean - \code{true} the peer was accepted for tracking or
+  \code{false} if some error occurred.
 }
 \description{
-\code{admin_addPeer} requests adding a new remote node to the list of tracked static nodes.
+\code{admin_addPeer} requests adding a new remote node to the list of tracked
+static nodes.
 }
 \examples{
 \donttest{
-admin_addPeer("enode://c1a07558238c0b31657450dd34a558752d63150ce334f3e99b9187262b612f48a713a083cd1601bfe3bba761a908264320885633fa81d6d6ca0ef7a6e84a2bcd@[127.0.0.1]:30301")
-}
+admin_addPeer('enode://c1a07558238c0b31657450dd34a558752d63150ce334f3e99b9187
+262b612f48a713a083cd1601bfe3bba761a908264320885633fa81d6d6ca0ef7a6e84a2bcd
+  @[127.0.0.1]:30301') }
 
 }
 \seealso{

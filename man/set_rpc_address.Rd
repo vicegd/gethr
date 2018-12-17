@@ -12,11 +12,12 @@ set_rpc_address(url, port)
 \item{port}{Integer - Port of the Geth node.}
 }
 \description{
-\code{set_rpc_address} sets the RPC address that is being used to connect to the Geth node.
+\code{set_rpc_address} sets the RPC address that is being used to connect to
+the Geth node.
 }
 \examples{
-set_rpc_address("http://153.35.91.1", 8600)
-set_rpc_address("http://localhost", 8545)
+set_rpc_address('http://153.35.91.1', 8600)
+set_rpc_address('http://localhost', 8545)
 
 }
 \seealso{

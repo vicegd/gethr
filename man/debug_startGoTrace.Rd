@@ -14,7 +14,7 @@ debug_startGoTrace(file)
 }
 \examples{
 \donttest{
-debug_startGoTrace("file.log")
+debug_startGoTrace('file.log')
 }
 
 }

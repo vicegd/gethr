@@ -17,7 +17,7 @@ String - Key pair ID on sucess.
 }
 \examples{
 \donttest{
-shh_addPrivatekey("0x6d795f707269766174655f6b6579")
+shh_addPrivatekey('0x6d795f707269766174655f6b6579')
 }
 
 }

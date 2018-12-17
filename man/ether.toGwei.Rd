@@ -9,7 +9,8 @@ ether.toGwei(amount, type)
 \arguments{
 \item{amount}{Integer - Amount of the cryptocurrency to convert from.}
 
-\item{type}{String - Unit of the cryptocurrency to convert from: wei, kwei, mwei, gwei, szabo, finney, ether, kether, mether, gether or tether.}
+\item{type}{String - Unit of the cryptocurrency to convert from: wei, kwei,
+mwei, gwei, szabo, finney, ether, kether, mether, gether or tether.}
 }
 \value{
 Integer - Value in Gwei.
@@ -18,7 +19,7 @@ Integer - Value in Gwei.
 \code{ether.toGwei} returns the value of the cryptocurrency in Gwei.
 }
 \examples{
-ether.toGwei(50, "ether")
+ether.toGwei(50, 'ether')
 
 }
 \seealso{

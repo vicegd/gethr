@@ -10,7 +10,9 @@ txpool_status()
 Integer - Number of pending and queued transactions.
 }
 \description{
-\code{txpool_status} returns the number of transactions currently pending for inclusion in the next block(s), as well as the ones that are being scheduled for future execution only.
+\code{txpool_status} returns the number of transactions currently pending for
+inclusion in the next block(s), as well as the ones that are being scheduled
+for future execution only.
 }
 \examples{
 \donttest{

@@ -10,14 +10,17 @@ eth_sendRawTransaction(data)
 \item{data}{Data - Signed transaction data.}
 }
 \value{
-Data - The transaction hash, or the zero hash if the transaction is not yet available.
+Data - The transaction hash, or the zero hash if the transaction is
+  not yet available.
 }
 \description{
-\code{eth_sendRawTransaction} creates new message call transaction or a contract creation for signed transactions.
+\code{eth_sendRawTransaction} creates new message call transaction or a
+contract creation for signed transactions.
 }
 \examples{
 \donttest{
-eth_sendRawTransaction("0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f072445675058bb8eb970870f072145675")
+eth_sendRawTransaction('0xd46e8dd67c5d32be8d46e8dd67c5d32be8058bb8eb970870f
+072445675058bb8eb970870f072145675')
 }
 
 }

@@ -14,14 +14,17 @@ eth_submitWork(nonce, pow_hash, mix_digest)
 \item{mix_digest}{Data - Mix digest.}
 }
 \value{
-Boolean - returns \code{true} if the provided solution is valid, otherwise \code{false}.
+Boolean - returns \code{true} if the provided solution is valid,
+  otherwise \code{false}.
 }
 \description{
 \code{eth_submitWork} is used for submitting a proof-of-work solution.
 }
 \examples{
 \donttest{
-eth_submitWork("0x0000000000000001", "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef", "0xD1FE5700000000000000000000000000D1FE5700000000000000000000000000")
+eth_submitWork('0x0000000000000001', '0x1234567890abcdef1234567890abcde
+f1234567890abcdef1234567890abcdef', '0xD1FE5700000000000000000000000000
+D1FE5700000000000000000000000000')
 }
 
 }

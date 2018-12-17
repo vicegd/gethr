@@ -8,17 +8,21 @@ eth_getTransactionByBlockNumberAndIndex(block_number, trans_index,
   hex = TRUE)
 }
 \arguments{
-\item{block_number}{Integer|Tag - Block number, or the string "earliest", "latest" or "pending".}
+\item{block_number}{Integer|Tag - Block number, or the string 'earliest',
+'latest' or 'pending'.}
 
 \item{trans_index}{Integer - Transaction index position.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
-Object - A transaction object, or \cite{null} when no transaction was found.
+Object - A transaction object, or \cite{null} when no transaction was
+  found.
 }
 \description{
-\code{eth_getTransactionByBlockHashAndIndex} returns information about a transaction by block number and transaction index position.
+\code{eth_getTransactionByBlockHashAndIndex} returns information about a
+transaction by block number and transaction index position.
 }
 \examples{
 \donttest{

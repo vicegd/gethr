@@ -10,7 +10,9 @@ debug_setHead(number)
 \item{number}{Integer - Number of the block.}
 }
 \description{
-\code{debug_setHead} sets the current head of the local chain by block number. Note, this is a destructive action and may severely damage your chain. Use with extreme caution.
+\code{debug_setHead} sets the current head of the local chain by block
+number. Note, this is a destructive action and may severely damage your
+chain. Use with extreme caution.
 }
 \examples{
 \donttest{

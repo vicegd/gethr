@@ -11,19 +11,21 @@ eth_getStorageAt(address, position, number = "latest")
 
 \item{position}{Integer - Position in the storage.}
 
-\item{number}{Integer|Tag - Block number, or the string "latest", "earliest" or "pending".}
+\item{number}{Integer|Tag - Block number, or the string 'latest', 'earliest'
+or 'pending'.}
 }
 \value{
 Data - Value at this storage position.
 }
 \description{
-\code{eth_getStorageAt} returns the value from a storage position at a given address.
+\code{eth_getStorageAt} returns the value from a storage position at a given
+address.
 }
 \examples{
 \donttest{
-eth_getStorageAt("0xcaf9a0356ddfa779fdbb55c45b22d35673550f30", "0x0")
-eth_getStorageAt("0xcaf9a0356ddfa779fdbb55c45b22d35673550f30", "0x0", "latest")
-eth_getStorageAt("0xcaf9a0356ddfa779fdbb55c45b22d35673550f30", "0x0", 10)
+eth_getStorageAt('0xcaf9a0356ddfa779fdbb55c45b22d35673550f30', '0x0')
+eth_getStorageAt('0xcaf9a0356ddfa779fdbb55c45b22d35673550f30', '0x0', 'latest')
+eth_getStorageAt('0xcaf9a0356ddfa779fdbb55c45b22d35673550f30', '0x0', 10)
 }
 
 }

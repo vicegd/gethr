@@ -13,11 +13,13 @@ eth_getBlockTransactionCountByHash(hash)
 Integer - Number of transactions in the block.
 }
 \description{
-\code{eth_getBlockTransactionCountByHash} returns the number of transactions in a block from a block matching the given block hash.
+\code{eth_getBlockTransactionCountByHash} returns the number of transactions
+in a block from a block matching the given block hash.
 }
 \examples{
 \donttest{
-eth_getBlockTransactionCountByHash("0x6e4670b7fda89b5960e684d4c809f7e7e9d9c0ee70b43849405efe78aa3c0d24")
+eth_getBlockTransactionCountByHash('0x6e4670b7fda89b5960e684d4c809f7e7e9d9c0
+ee70b43849405efe78aa3c0d24')
 }
 
 }

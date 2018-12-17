@@ -15,11 +15,13 @@ personal_importRawKey(keydata, password)
 Address - Address of the new account.
 }
 \description{
-\code{personal_importRawKey} imports the given unencrypted private key (hex string) into the key store, encrypting it with the passphrase.
+\code{personal_importRawKey} imports the given unencrypted private key (hex
+string) into the key store, encrypting it with the passphrase.
 }
 \examples{
 \donttest{
-personal_importRawKey("a5e3d0b2bb3011d00a139e5cdc4ae13144962752d6af7916bf2bd271a240094e", "password")
+personal_importRawKey('a5e3d0b2bb3011d00a139e5cdc4ae13144962752d6af7916bf2b
+d271a240094e', 'password')
 }
 
 }

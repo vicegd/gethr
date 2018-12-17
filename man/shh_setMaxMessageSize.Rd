@@ -13,7 +13,10 @@ shh_setMaxMessageSize(size)
 Boolean -  \code{true} on success.
 }
 \description{
-\code{shh_setMaxMessageSize} sets the maximal message size allowed by this node. Incoming and outgoing messages with a larger size will be rejected. Whisper message size can never exceed the limit imposed by the underlying P2P protocol (10 Mb).
+\code{shh_setMaxMessageSize} sets the maximal message size allowed by this
+node. Incoming and outgoing messages with a larger size will be rejected.
+Whisper message size can never exceed the limit imposed by the underlying P2P
+protocol (10 Mb).
 }
 \examples{
 \donttest{

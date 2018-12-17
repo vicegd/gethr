@@ -17,7 +17,7 @@ Boolean - \code{true} if changed, otherwise \code{false}.
 }
 \examples{
 \donttest{
-miner_setEtherBase("0xb117a8bc3ecf2c3f006b89da6826e49b4193977a")
+miner_setEtherBase('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a')
 }
 
 }

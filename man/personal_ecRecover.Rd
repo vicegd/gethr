@@ -15,11 +15,14 @@ personal_ecRecover(message, signature)
 Address - Address of the account that has signed a message.
 }
 \description{
-\code{personal_ecRecover} returns the address associated with the private key that was used to calculate a signature.
+\code{personal_ecRecover} returns the address associated with the private key
+that was used to calculate a signature.
 }
 \examples{
 \donttest{
-personal_ecRecover("hello world", "0x1dd3657c91d95f350ab25f17ee7cbcdbccd3f5bc52976bfd4dd03bd6bc29d2ac23e656bee509ca33b921e0e6b53eb64082be1bb3c69c3a4adccd993b1d667f8d1b")
+personal_ecRecover('hello world', '0x1dd3657c91d95f350ab25f17ee7cbcdbccd3f5bc
+52976bfd4dd03bd6bc29d2ac23e656bee509ca33b921e0e6b53eb64082be1bb3c69c3a4adccd9
+93b1d667f8d1b')
 }
 
 }

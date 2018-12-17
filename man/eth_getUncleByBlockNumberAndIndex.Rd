@@ -7,17 +7,20 @@
 eth_getUncleByBlockNumberAndIndex(block_number, uncle_index, hex = TRUE)
 }
 \arguments{
-\item{block_number}{Integer|Tag - Block number, or the string "earliest", "latest" or "pending".}
+\item{block_number}{Integer|Tag - Block number, or the string 'earliest',
+'latest' or 'pending'.}
 
 \item{uncle_index}{Integer - Uncle index position.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
 Object - A block object, or \cite{null} when no block was found.
 }
 \description{
-\code{eth_getUncleByBlockHashAndIndex} returns information about a uncle of a block by number and uncle index position.
+\code{eth_getUncleByBlockHashAndIndex} returns information about a uncle of a
+block by number and uncle index position.
 }
 \examples{
 \donttest{

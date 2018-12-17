@@ -10,7 +10,8 @@ miner_start(threads = 1)
 \item{threads}{Integer - Given number of threads used for mining.}
 }
 \description{
-\code{miner_start} starts the CPU mining process with the given number of threads and generate a new DAG if need be.
+\code{miner_start} starts the CPU mining process with the given number of
+threads and generate a new DAG if need be.
 }
 \examples{
 \donttest{

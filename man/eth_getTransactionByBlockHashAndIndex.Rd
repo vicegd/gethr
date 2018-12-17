@@ -12,18 +12,23 @@ eth_getTransactionByBlockHashAndIndex(block_hash, trans_index,
 
 \item{trans_index}{Integer - Transaction index position.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
-Object - A transaction object, or \cite{null} when no transaction was found.
+Object - A transaction object, or \cite{null} when no transaction was
+  found.
 }
 \description{
-\code{eth_getTransactionByBlockHashAndIndex} returns information about a transaction by block hash and transaction index position.
+\code{eth_getTransactionByBlockHashAndIndex} returns information about a
+transaction by block hash and transaction index position.
 }
 \examples{
 \donttest{
-eth_getTransactionByBlockHashAndIndex("0xb69e76f3997f318f4385f31885576aa43cb40ad4ed8938718e150320ff48f528", 0)
-eth_getTransactionByBlockHashAndIndex("0x9f965e1d082ffe457247befe92089d8fc2e63015c12f373bd0d61d3ab76c6d05", 10, FALSE)
+eth_getTransactionByBlockHashAndIndex('0xb69e76f3997f318f4385f31885576aa43cb
+40ad4ed8938718e150320ff48f528', 0)
+eth_getTransactionByBlockHashAndIndex('0x9f965e1d082ffe457247befe92089d8fc2e
+63015c12f373bd0d61d3ab76c6d05', 10, FALSE)
 }
 
 }

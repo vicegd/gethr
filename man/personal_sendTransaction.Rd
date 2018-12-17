@@ -10,30 +10,40 @@ personal_sendTransaction(from, data = -1, to = -1, gas = 90000,
 \arguments{
 \item{from}{Address - Address the transaction is send from.}
 
-\item{data}{Data - Compiled code of a contract OR the hash of the invoked method signature and encoded parameters.}
+\item{data}{Data - Compiled code of a contract OR the hash of the invoked
+method signature and encoded parameters.}
 
 \item{to}{Address - Address the transaction is send to.}
 
-\item{gas}{Integer - Gas provided for the transaction execution. It will return unused gas.}
+\item{gas}{Integer - Gas provided for the transaction execution. It will
+return unused gas.}
 
 \item{gas_price}{Integer - Value of the gas for this transaction.}
 
 \item{value}{Integer - Value sent with the transaction.}
 
-\item{nonce}{Integer - Value of the nonce. This allows to overwrite your own pending transactions that use the same nonce.}
+\item{nonce}{Integer - Value of the nonce. This allows to overwrite your own
+pending transactions that use the same nonce.}
 
 \item{password}{String - Password of the account.}
 }
 \value{
-Data - The transaction hash, or the zero hash if the transaction is not yet available.
+Data - The transaction hash, or the zero hash if the transaction is
+  not yet available.
 }
 \description{
-\code{personal_sendTransaction} creates new message call transaction or a contract creation, if the data field contains code.
+\code{personal_sendTransaction} creates new message call transaction or a
+contract creation, if the data field contains code.
 }
 \examples{
 \donttest{
-personal_sendTransaction(from = "0xb117a8bc3ecf2c3f006b89da6826e49b4193977a", data = "0x8f8a0d1900000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002", password = "password")
-personal_sendTransaction(from = "0xb117a8bc3ecf2c3f006b89da6826e49b4193977a", to = "0x84159f53c71ef9e8df944225430da49371cbd67b", value = 10, password = "password")
+personal_sendTransaction(from = '0xb117a8bc3ecf2c3f006b89da6826e49b4193977a'
+, data = '0x8f8a0d190000000000000000000000000000000000000000000000000000000
+0000000060000000000000000000000000000000000000000000000000000000000000002',
+password = 'password')
+personal_sendTransaction(from = '0xb117a8bc3ecf2c3f006b89da6826e49b4193977a'
+, to = '0x84159f53c71ef9e8df944225430da49371cbd67b', value = 10, password =
+'password')
 }
 
 }

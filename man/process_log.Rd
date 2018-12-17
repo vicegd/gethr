@@ -13,7 +13,8 @@ process_log(log)
 Object - Information of the log with values in decimal if possible.
 }
 \description{
-\code{process_block} returns the values of the log in decimal if possible. The values are obtained from the Geth node.
+\code{process_block} returns the values of the log in decimal if possible.
+The values are obtained from the Geth node.
 }
 \seealso{
 Other utils functions: \code{\link{dec_to_hex}},

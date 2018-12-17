@@ -19,9 +19,9 @@ Object - Response from the Geth node.
 }
 \examples{
 \donttest{
-get_post("eth_accounts")
-get_post("debug_verbosity", list(3))
-get_post("debug_goTrace", list("file.log", 5))
+get_post('eth_accounts')
+get_post('debug_verbosity', list(3))
+get_post('debug_goTrace', list('file.log', 5))
 }
 
 }

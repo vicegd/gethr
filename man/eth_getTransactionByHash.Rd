@@ -9,18 +9,23 @@ eth_getTransactionByHash(hash, hex = TRUE)
 \arguments{
 \item{hash}{Hash - Hash of the transaction.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
-Object - A transaction object, or \cite{null} when no transaction was found.
+Object - A transaction object, or \cite{null} when no transaction was
+  found.
 }
 \description{
-\code{eth_getTransactionByHash} returns the information about a transaction requested by transaction hash.
+\code{eth_getTransactionByHash} returns the information about a transaction
+requested by transaction hash.
 }
 \examples{
 \donttest{
-eth_getTransactionByHash("0xb61a9ca11109646bfd056f8be9e1e183a1b1bea3c281e73cc4f17d332fa69a05")
-eth_getTransactionByHash("0xcb33fb7850764aefd3cedd3dcae186cbd8bda74ca2822e4c59115b1c6b5c48bf", FALSE)
+eth_getTransactionByHash('0xb61a9ca11109646bfd056f8be9e1e183a1b1bea3c281e73c
+c4f17d332fa69a05')
+eth_getTransactionByHash('0xcb33fb7850764aefd3cedd3dcae186cbd8bda74ca2822e4c
+59115b1c6b5c48bf', FALSE)
 }
 
 }

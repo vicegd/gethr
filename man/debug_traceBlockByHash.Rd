@@ -13,11 +13,13 @@ debug_traceBlockByHash(hash)
 Object - Full stack trace of the block.
 }
 \description{
-\code{debug_traceBlockByHash} returns a full stack trace of all invoked opcodes of all transaction that were included included in this block.
+\code{debug_traceBlockByHash} returns a full stack trace of all invoked
+opcodes of all transaction that were included included in this block.
 }
 \examples{
 \donttest{
-debug_traceBlockByHash("0xc41e977760873fbab207d0921bc124edce6ce4044d2718b2bba1ebec45656ffa")
+debug_traceBlockByHash('0xc41e977760873fbab207d0921bc124edce6ce4044d2718b2bba1
+ebec45656ffa')
 }
 
 }

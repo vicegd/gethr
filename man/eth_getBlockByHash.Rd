@@ -9,9 +9,11 @@ eth_getBlockByHash(hash, full = TRUE, hex = TRUE)
 \arguments{
 \item{hash}{Hash - Hash of the block.}
 
-\item{full}{Boolean - If \code{true} it returns the full transaction objects, if \code{false} only the hashes of the transactions.}
+\item{full}{Boolean - If \code{true} it returns the full transaction objects,
+if \code{false} only the hashes of the transactions.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
 Object - A block object, or \code{null} when no block was found.
@@ -21,8 +23,10 @@ Object - A block object, or \code{null} when no block was found.
 }
 \examples{
 \donttest{
-eth_getBlockByHash("0xb69e76f3997f318f4385f31885576aa43cb40ad4ed8938718e150320ff48f528")
-eth_getBlockByHash("0xb69e76f3997f318f4385f31885576aa43cb40ad4ed8938718e150320ff48f528", FALSE, FALSE)
+eth_getBlockByHash('0xb69e76f3997f318f4385f31885576aa43cb40ad4ed8938718e1503
+20ff48f528')
+eth_getBlockByHash('0xb69e76f3997f318f4385f31885576aa43cb40ad4ed8938718e1503
+20ff48f528', FALSE, FALSE)
 }
 
 }

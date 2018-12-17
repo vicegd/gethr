@@ -9,19 +9,23 @@ eth_getProof(address, keys, number = "latest")
 \arguments{
 \item{address}{Address - Address of the account or contract.}
 
-\item{keys}{Array of Data - Storage-keys which should be proofed and included.}
+\item{keys}{Array of Data - Storage-keys which should be proofed and
+included.}
 
-\item{number}{Integer|Tag - Block number, or the string "latest", "earliest" or "pending".}
+\item{number}{Integer|Tag - Block number, or the string 'latest', 'earliest'
+or 'pending'.}
 }
 \value{
 Data - Value at this storage position.
 }
 \description{
-\code{eth_getProof} returns the account and storage values of the specified account including the Merkle-proof.
+\code{eth_getProof} returns the account and storage values of the specified
+account including the Merkle-proof.
 }
 \examples{
 \donttest{
-eth_getProof("0x8655bd257db96eb2aca7154f845d6b1d67689219", list("0x0000000000000000000000000000000000000000000000000000000000000000"))
+eth_getProof('0x8655bd257db96eb2aca7154f845d6b1d67689219',
+list('0x0000000000000000000000000000000000000000000000000000000000000000'))
 }
 
 }

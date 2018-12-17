@@ -9,18 +9,23 @@ eth_getTransactionReceipt(hash, hex = TRUE)
 \arguments{
 \item{hash}{Hash - Hash of a transaction.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
-Object - A transaction receipt, or \cite{null} when no receipt was found.
+Object - A transaction receipt, or \cite{null} when no receipt was
+  found.
 }
 \description{
-\code{eth_getTransactionReceipt} returns the receipt of a transaction by transaction hash..
+\code{eth_getTransactionReceipt} returns the receipt of a transaction by
+transaction hash..
 }
 \examples{
 \donttest{
-eth_getTransactionReceipt("0xb61a9ca11109646bfd056f8be9e1e183a1b1bea3c281e73cc4f17d332fa69a05")
-eth_getTransactionReceipt("0xb61a9ca11109646bfd056f8be9e1e183a1b1bea3c281e73cc4f17d332fa69a05", FALSE)
+eth_getTransactionReceipt('0xb61a9ca11109646bfd056f8be9e1e183a1b1bea3c281e
+73cc4f17d332fa69a05')
+eth_getTransactionReceipt('0xb61a9ca11109646bfd056f8be9e1e183a1b1bea3c281e
+73cc4f17d332fa69a05', FALSE)
 }
 
 }

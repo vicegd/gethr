@@ -9,20 +9,28 @@ eth_estimateGas(to, data)
 \arguments{
 \item{to}{Address - Address the call is send to.}
 
-\item{data}{Data - Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI \url{https://solidity.readthedocs.io/en/develop/abi-spec.html}.}
+\item{data}{Data - Hash of the method signature and encoded parameters. For
+details see Ethereum Contract ABI
+\url{https://solidity.readthedocs.io/en/develop/abi-spec.html}.}
 }
 \value{
 Integer - Amount of gas estimated.
 }
 \description{
-\code{eth_estimateGas} returns an estimate of how much gas is necessary to allow the transaction to complete.
+\code{eth_estimateGas} returns an estimate of how much gas is necessary to
+allow the transaction to complete.
 }
 \details{
-The transaction will not be added to the blockchain. Note that the estimate may be significantly more than the amount of gas actually used by the transaction, for a variety of reasons including EVM mechanics and node performance.
+The transaction will not be added to the blockchain. Note that the estimate
+may be significantly more than the amount of gas actually used by the
+transaction, for a variety of reasons including EVM mechanics and node
+performance.
 }
 \examples{
 \donttest{
-eth_estimateGas(to = "0xcaf9a0356ddfa779fdbb55c45b22d35673550f30", data = "0x8f8a0d1900000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002")
+eth_estimateGas(to = '0xcaf9a0356ddfa779fdbb55c45b22d35673550f30', data =
+'0x8f8a0d1900000000000000000000000000000000000000000000000000000000000000
+060000000000000000000000000000000000000000000000000000000000000002')
 }
 
 }

@@ -17,7 +17,7 @@ String - Symmetric key that corresponds to a symmetric key ID.
 }
 \examples{
 \donttest{
-shh_getSymKey("8d7b2dff569d14308a8e74ca1475dd93ba8dd42a9a74e97638796d5d6c8751ac")
+shh_getSymKey('8d7b2dff569d14308a8e74ca1475dd93ba8dd42a9a74e97638796d5d6c8751ac')
 }
 
 }

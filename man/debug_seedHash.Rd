@@ -13,7 +13,8 @@ debug_seedHash(number)
 Data - Seed hash of the block by number.
 }
 \description{
-\code{debug_seedHash} fetches and retrieves the seed hash of the block by number.
+\code{debug_seedHash} fetches and retrieves the seed hash of the block by
+number.
 }
 \examples{
 \donttest{

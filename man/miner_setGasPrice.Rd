@@ -13,7 +13,9 @@ miner_setGasPrice(price)
 Boolean - \code{true} if changed, otherwise \code{false}.
 }
 \description{
-\code{miner_setGasPrice} sets the minimal accepted gas price when mining transactions. Any transactions that are below this limit are excluded from the mining process.
+\code{miner_setGasPrice} sets the minimal accepted gas price when mining
+transactions. Any transactions that are below this limit are excluded from
+the mining process.
 }
 \examples{
 \donttest{

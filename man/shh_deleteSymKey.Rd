@@ -17,7 +17,7 @@ Boolean - \code{true} on success.
 }
 \examples{
 \donttest{
-shh_deleteSymKey("8d7b2dff569d14308a8e74ca1475dd93ba8dd42a9a74e97638796d5d6c8751ac")
+shh_deleteSymKey('8d7b2dff569d14308a8e74ca1475dd93ba8dd42a9a74e97638796d5d6c8751ac')
 }
 
 }

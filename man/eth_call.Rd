@@ -12,25 +12,33 @@ eth_call(from = -1, to, gas = 30000, gas_price = -1, value = -1,
 
 \item{to}{Address - Address the call is send to.}
 
-\item{gas}{Integer - Gas provided for the call execution. \code{eth_call} consumes zero gas, but this parameter may be needed by some executions.}
+\item{gas}{Integer - Gas provided for the call execution. \code{eth_call}
+consumes zero gas, but this parameter may be needed by some executions.}
 
 \item{gas_price}{Integer - Value of the gas for this call.}
 
 \item{value}{Integer - Value sent with the call}
 
-\item{data}{Data - Hash of the method signature and encoded parameters. For details see Ethereum Contract ABI \url{https://solidity.readthedocs.io/en/develop/abi-spec.html}.}
+\item{data}{Data - Hash of the method signature and encoded parameters. For
+details see Ethereum Contract ABI
+\url{https://solidity.readthedocs.io/en/develop/abi-spec.html}.}
 
-\item{number}{Integer|Tag - Integer block number, or the string "latest", "earliest" or "pending", see the default block parameter \url{https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter}}
+\item{number}{Integer|Tag - Integer block number, or the string 'latest',
+'earliest' or 'pending', see the default block parameter
+\url{https://github.com/ethereum/wiki/wiki/JSON-RPC#the-default-block-parameter}}
 }
 \value{
 Data - Return value of executed call.
 }
 \description{
-\code{eth_call} executes a new message call immediately without creating a transaction on the block chain.
+\code{eth_call} executes a new message call immediately without creating a
+transaction on the block chain.
 }
 \examples{
 \donttest{
-eth_call(to = "0xcaf9a0356ddfa779fdbb55c45b22d35673550f30", data = "0x8f8a0d1900000000000000000000000000000000000000000000000000000000000000060000000000000000000000000000000000000000000000000000000000000002")
+eth_call(to = '0xcaf9a0356ddfa779fdbb55c45b22d35673550f30', data = '0x8f8a0d1900
+00000000000000000000000000000000000000000000000000000000000006000000000000000000
+0000000000000000000000000000000000000000000002')
 }
 
 }

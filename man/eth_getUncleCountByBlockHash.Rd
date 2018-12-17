@@ -13,11 +13,13 @@ eth_getUncleCountByBlockHash(hash)
 Integer - Number of uncles in the block.
 }
 \description{
-\code{eth_getUncleCountByBlockHash} returns the number of uncles in a block from a block matching the given block hash.
+\code{eth_getUncleCountByBlockHash} returns the number of uncles in a block
+from a block matching the given block hash.
 }
 \examples{
 \donttest{
-eth_getUncleCountByBlockHash("0x6e4670b7fda89b5960e684d4c809f7e7e9d9c0ee70b43849405efe78aa3c0d24")
+eth_getUncleCountByBlockHash('0x6e4670b7fda89b5960e684d4c809f7e7e9d9c0ee70b
+43849405efe78aa3c0d24')
 }
 
 }

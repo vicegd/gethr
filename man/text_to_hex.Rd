@@ -16,7 +16,7 @@ Data - Value in hexadecimal.
 \code{text_to_hex} returns the hexadecimal.
 }
 \examples{
-text_to_hex("hello world")
+text_to_hex('hello world')
 
 }
 \seealso{

@@ -9,7 +9,8 @@ ether.toTether(amount, type)
 \arguments{
 \item{amount}{Integer - Amount of the cryptocurrency to convert from.}
 
-\item{type}{String - Unit of the cryptocurrency to convert from: wei, kwei, mwei, gwei, szabo, finney, ether, kether, mether, gether or tether.}
+\item{type}{String - Unit of the cryptocurrency to convert from: wei, kwei,
+mwei, gwei, szabo, finney, ether, kether, mether, gether or tether.}
 }
 \value{
 Integer - Value in Tether.
@@ -18,7 +19,7 @@ Integer - Value in Tether.
 \code{ether.toTether} returns the value of the cryptocurrency in Tether.
 }
 \examples{
-ether.toTether(50, "ether")
+ether.toTether(50, 'ether')
 
 }
 \seealso{

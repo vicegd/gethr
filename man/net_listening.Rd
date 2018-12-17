@@ -10,7 +10,8 @@ net_listening()
 Boolean - \code{true} when listening, otherwise \code{false}.
 }
 \description{
-\code{net_listening} returns \code{true} if client is actively listening for network connections.
+\code{net_listening} returns \code{true} if client is actively listening for
+network connections.
 }
 \examples{
 \donttest{

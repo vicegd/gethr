@@ -13,11 +13,12 @@ personal_newAccount(password)
 Address - Address of the new account.
 }
 \description{
-\code{personal_newAccount} generates a new private key and stores it in the key store directory. The key file is encrypted with the given passphrase.
+\code{personal_newAccount} generates a new private key and stores it in the
+key store directory. The key file is encrypted with the given passphrase.
 }
 \examples{
 \donttest{
-personal_newAccount("password")
+personal_newAccount('password')
 }
 
 }

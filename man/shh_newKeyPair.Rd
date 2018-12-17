@@ -10,7 +10,8 @@ shh_newKeyPair()
 String - Key pair ID on sucess.
 }
 \description{
-\code{shh_newKeyPair} generates a new public and private key pair for message decryption and encryption.
+\code{shh_newKeyPair} generates a new public and private key pair for message
+decryption and encryption.
 }
 \examples{
 \donttest{

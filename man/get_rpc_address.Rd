@@ -10,7 +10,8 @@ get_rpc_address()
 String - RPC Address.
 }
 \description{
-\code{get_rpc_address} returns the RPC address that is being used to connect to the Geth node.
+\code{get_rpc_address} returns the RPC address that is being used to connect
+to the Geth node.
 }
 \examples{
 get_rpc_address()

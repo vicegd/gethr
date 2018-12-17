@@ -9,7 +9,8 @@ eth_getBalance(address = NULL, number = "latest")
 \arguments{
 \item{address}{Address - Address to check the balance.}
 
-\item{number}{Integer|Tag - Block number, or the string "latest", "earliest" or "pending".}
+\item{number}{Integer|Tag - Block number, or the string 'latest', 'earliest'
+or 'pending'.}
 }
 \value{
 Integer - Current balance in wei.
@@ -20,9 +21,9 @@ Integer - Current balance in wei.
 \examples{
 \donttest{
 eth_getBalance()
-eth_getBalance("0xb117a8bc3ecf2c3f006b89da6826e49b4193977a")
-eth_getBalance("0xb117a8bc3ecf2c3f006b89da6826e49b4193977a", "earliest")
-eth_getBalance("0xb117a8bc3ecf2c3f006b89da6826e49b4193977a", 5)
+eth_getBalance('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a')
+eth_getBalance('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a', 'earliest')
+eth_getBalance('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a', 5)
 }
 
 }

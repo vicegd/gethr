@@ -7,10 +7,12 @@
 eth_getWork()
 }
 \value{
-Object - Information about the block header pow-hash, the seed hash used for the DAG and the boundary condition / target.
+Object - Information about the block header pow-hash, the seed hash
+  used for the DAG and the boundary condition / target.
 }
 \description{
-\code{eth_getWork} returns the hash of the current block, the seedHash, and the boundary condition to be met the target.
+\code{eth_getWork} returns the hash of the current block, the seedHash, and
+the boundary condition to be met the target.
 }
 \examples{
 \donttest{

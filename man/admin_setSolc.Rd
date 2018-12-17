@@ -7,14 +7,17 @@
 admin_setSolc(path)
 }
 \arguments{
-\item{path}{String - Solidity compiler path defaults to /usr/bin/solc if not set, so you only need to change it for using a non-standard compiler location.}
+\item{path}{String - Solidity compiler path defaults to /usr/bin/solc if not
+set, so you only need to change it for using a non-standard compiler
+location.}
 }
 \description{
-\code{admin_setSolc} sets the Solidity compiler path to be used by the node when invoking the eth_compileSolidity RPC method.
+\code{admin_setSolc} sets the Solidity compiler path to be used by the node
+when invoking the eth_compileSolidity RPC method.
 }
 \examples{
 \donttest{
-admin_setSolc("/usr/bin/solidityc")
+admin_setSolc('/usr/bin/solidityc')
 }
 
 }

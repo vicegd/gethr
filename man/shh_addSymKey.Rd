@@ -17,7 +17,7 @@ String - Symmetric key ID on sucess.
 }
 \examples{
 \donttest{
-shh_addSymKey("0xf6dcf21ed6a17bd78d8c4c63195ab997b3b65ea683705501eae82d32667adc92")
+shh_addSymKey('0xf6dcf21ed6a17bd78d8c4c63195ab997b3b65ea683705501eae82d32667adc92')
 }
 
 }

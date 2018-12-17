@@ -13,11 +13,12 @@ miner_setExtra(data)
 Boolean - \code{true} if changed, otherwise \code{false}.
 }
 \description{
-\code{miner_setExtra} sets the extra data a miner can include when miner blocks. This is capped at 32 bytes.
+\code{miner_setExtra} sets the extra data a miner can include when miner
+blocks. This is capped at 32 bytes.
 }
 \examples{
 \donttest{
-miner_setExtra("My info")
+miner_setExtra('My info')
 }
 
 }

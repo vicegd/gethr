@@ -10,11 +10,12 @@ debug_startCPUProfile(file)
 \item{file}{String - File to write the data.}
 }
 \description{
-\code{debug_startCPUProfile} turns on CPU profiling indefinitely, writing to the given file.
+\code{debug_startCPUProfile} turns on CPU profiling indefinitely, writing to
+the given file.
 }
 \examples{
 \donttest{
-debug_startCPUProfile("file.log")
+debug_startCPUProfile('file.log')
 }
 
 }

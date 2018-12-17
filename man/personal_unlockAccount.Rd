@@ -17,11 +17,13 @@ personal_unlockAccount(address, password, duration = 3000)
 Boolean - \code{true} if the account has been unlocked.
 }
 \description{
-\code{personal_unlockAccount} unlocks an account to be used for signing and transactions.
+\code{personal_unlockAccount} unlocks an account to be used for signing and
+transactions.
 }
 \examples{
 \donttest{
-personal_unlockAccount("0xb117a8bc3ecf2c3f006b89da6826e49b4193977a", "password", 60000)
+personal_unlockAccount('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a',
+'password', 60000)
 }
 
 }

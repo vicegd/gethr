@@ -12,11 +12,12 @@ debug_cpuProfile(file, seconds)
 \item{seconds}{Integer - Seconds to write the data.}
 }
 \description{
-\code{debug_cpuProfile} turns on CPU profiling for the given duration and writes profile data to disk.
+\code{debug_cpuProfile} turns on CPU profiling for the given duration and
+writes profile data to disk.
 }
 \examples{
 \donttest{
-debug_cpuProfile("file.log", 5)
+debug_cpuProfile('file.log', 5)
 }
 
 }

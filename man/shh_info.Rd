@@ -7,7 +7,9 @@
 shh_info()
 }
 \value{
-Object - Diagnostic information about current minimum PoW requirement, message size limit in bytes, memory size of the messages and number of current messages.
+Object - Diagnostic information about current minimum PoW
+  requirement, message size limit in bytes, memory size of the messages and
+  number of current messages.
 }
 \description{
 \code{shh_info} returns diagnostic information about the whisper node.

@@ -7,10 +7,13 @@
 debug_stacks()
 }
 \value{
-String - Representation of the stacks of all goroutines. Note that the web3 wrapper for this method takes care of the printing and does not return the string.
+String - Representation of the stacks of all goroutines. Note that
+  the web3 wrapper for this method takes care of the printing and does not
+  return the string.
 }
 \description{
-\code{debug_stacks} returns a printed representation of the stacks of all goroutines.
+\code{debug_stacks} returns a printed representation of the stacks of all
+goroutines.
 }
 \examples{
 \donttest{

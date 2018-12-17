@@ -7,10 +7,12 @@
 debug_verbosity(level)
 }
 \arguments{
-\item{level}{Integer - File containing the Recursive Length Prefix of the block.}
+\item{level}{Integer - File containing the Recursive Length Prefix of the
+block.}
 }
 \description{
-\code{debug_verbosity} sets the logging verbosity ceiling. Log messages with level up to and including the given level will be printed.
+\code{debug_verbosity} sets the logging verbosity ceiling. Log messages with
+level up to and including the given level will be printed.
 }
 \examples{
 \donttest{

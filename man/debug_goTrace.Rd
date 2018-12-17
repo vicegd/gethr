@@ -12,11 +12,12 @@ debug_goTrace(file, seconds)
 \item{seconds}{Integer - Seconds to write the data.}
 }
 \description{
-\code{debug_goTrace} turns on Go runtime tracing for the given duration and writes trace data to disk.
+\code{debug_goTrace} turns on Go runtime tracing for the given duration and
+writes trace data to disk.
 }
 \examples{
 \donttest{
-debug_goTrace("file.log", 5)
+debug_goTrace('file.log', 5)
 }
 
 }

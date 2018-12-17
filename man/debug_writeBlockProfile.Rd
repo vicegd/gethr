@@ -10,11 +10,12 @@ debug_writeBlockProfile(file)
 \item{file}{String - File to write the data.}
 }
 \description{
-\code{debug_writeBlockProfile} writes a goroutine blocking profile to the given file.
+\code{debug_writeBlockProfile} writes a goroutine blocking profile to the
+given file.
 }
 \examples{
 \donttest{
-debug_writeBlockProfile("file.log")
+debug_writeBlockProfile('file.log')
 }
 
 }

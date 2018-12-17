@@ -16,7 +16,7 @@ String - Value in plain text.
 \code{hex_to_text} returns the plain text.
 }
 \examples{
-hex_to_text("0x68656c6c6f20776f726c64")
+hex_to_text('0x68656c6c6f20776f726c64')
 
 }
 \seealso{

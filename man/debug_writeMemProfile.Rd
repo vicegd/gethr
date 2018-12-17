@@ -14,7 +14,7 @@ debug_writeMemProfile(file)
 }
 \examples{
 \donttest{
-debug_writeMemProfile("file.log")
+debug_writeMemProfile('file.log')
 }
 
 }

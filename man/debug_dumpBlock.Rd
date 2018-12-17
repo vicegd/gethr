@@ -10,10 +10,12 @@ debug_dumpBlock(number)
 \item{number}{Integer - Number of the block.}
 }
 \value{
-Object - Information of the state (balance, code, hash, nonce, root and storage).
+Object - Information of the state (balance, code, hash, nonce, root
+  and storage).
 }
 \description{
-\code{debug_dumpBlock} retrieves the state that corresponds to the block number and returns a list of accounts (including storage and code).
+\code{debug_dumpBlock} retrieves the state that corresponds to the block
+number and returns a list of accounts (including storage and code).
 }
 \examples{
 \donttest{

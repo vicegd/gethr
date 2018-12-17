@@ -10,14 +10,16 @@ eth_uninstallFilter(id)
 \item{id}{Integer - Filter Id.}
 }
 \value{
-Boolean - \code{true} if the filter can be unistalled, otherwise \code{false}.
+Boolean - \code{true} if the filter can be unistalled, otherwise
+  \code{false}.
 }
 \description{
-\code{eth_uninstallFilter} uninstalls a filter with given id. Should always be called when watch is no longer needed.
+\code{eth_uninstallFilter} uninstalls a filter with given id. Should always
+be called when watch is no longer needed.
 }
 \examples{
 \donttest{
-eth_uninstallFilter("0x5f74d97db50bb631ed0efe8b3b3697c8")
+eth_uninstallFilter('0x5f74d97db50bb631ed0efe8b3b3697c8')
 }
 
 }

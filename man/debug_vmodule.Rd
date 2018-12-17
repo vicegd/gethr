@@ -14,8 +14,8 @@ debug_vmodule(pattern)
 }
 \examples{
 \donttest{
-debug_vmodule("eth/*=4")
-debug_vmodule("p2p=5")
+debug_vmodule('eth/*=4')
+debug_vmodule('p2p=5')
 }
 
 }

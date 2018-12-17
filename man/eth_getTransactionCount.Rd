@@ -9,20 +9,22 @@ eth_getTransactionCount(address = NULL, number = "latest")
 \arguments{
 \item{address}{Address - Address of the storage.}
 
-\item{number}{Integer|Tag - Block number, or the string "latest", "earliest" or "pending".}
+\item{number}{Integer|Tag - Block number, or the string 'latest', 'earliest'
+or 'pending'.}
 }
 \value{
 Integer - Number of transactions send from this address.
 }
 \description{
-\code{eth_getTransactionCount} returns the number of transactions sent from an address.
+\code{eth_getTransactionCount} returns the number of transactions sent from
+an address.
 }
 \examples{
 \donttest{
 eth_getTransactionCount()
-eth_getTransactionCount("0xb117a8bc3ecf2c3f006b89da6826e49b4193977a")
-eth_getTransactionCount("0xb117a8bc3ecf2c3f006b89da6826e49b4193977a", "pending")
-eth_getTransactionCount("0xb117a8bc3ecf2c3f006b89da6826e49b4193977a", 10)
+eth_getTransactionCount('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a')
+eth_getTransactionCount('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a', 'pending')
+eth_getTransactionCount('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a', 10)
 }
 
 }

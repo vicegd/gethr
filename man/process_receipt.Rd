@@ -10,10 +10,12 @@ process_receipt(receipt)
 \item{receipt}{Objects - Information of the receipt in hexadecimal.}
 }
 \value{
-Object - Information of the receipt with values in plain text or decimal if possible.
+Object - Information of the receipt with values in plain text or
+  decimal if possible.
 }
 \description{
-\code{process_block} returns the values of the receipts in plain text or decimal if possible. The values are obtained from the Geth node.
+\code{process_block} returns the values of the receipts in plain text or
+decimal if possible. The values are obtained from the Geth node.
 }
 \seealso{
 Other utils functions: \code{\link{dec_to_hex}},

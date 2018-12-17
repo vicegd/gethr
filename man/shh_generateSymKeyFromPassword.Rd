@@ -13,11 +13,12 @@ shh_generateSymKeyFromPassword(password)
 String - Symmetric key ID on sucess.
 }
 \description{
-\code{shh_generateSymKeyFromPassword} stores the symmetric key, and returns its ID.
+\code{shh_generateSymKeyFromPassword} stores the symmetric key, and returns
+its ID.
 }
 \examples{
 \donttest{
-shh_generateSymKeyFromPassword("my_password")
+shh_generateSymKeyFromPassword('my_password')
 }
 
 }

@@ -13,7 +13,8 @@ eth_getUncleCountByBlockNumber(number)
 Integer - Number of uncles in the block.
 }
 \description{
-\code{eth_getUncleCountByBlockNumber} returns the number of uncles in a block from a block matching the given block number.
+\code{eth_getUncleCountByBlockNumber} returns the number of uncles in a block
+from a block matching the given block number.
 }
 \examples{
 \donttest{

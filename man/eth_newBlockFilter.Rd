@@ -10,7 +10,8 @@ eth_newBlockFilter()
 Hash - A filter Id.
 }
 \description{
-\code{eth_newBlockFilter} creates a filter in the node, to notify when a new block arrives.
+\code{eth_newBlockFilter} creates a filter in the node, to notify when a new
+block arrives.
 }
 \examples{
 \donttest{

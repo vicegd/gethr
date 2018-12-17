@@ -13,7 +13,7 @@
 #'
 #' @export
 web3_clientVersion <- function() {
-  get_post("web3_clientVersion")
+    get_post("web3_clientVersion")
 }
 
 #' Keccak-256 value of the data.
@@ -29,10 +29,10 @@ web3_clientVersion <- function() {
 #'
 #' @examples
 #' \donttest{
-#' web3_sha3("hello")
+#' web3_sha3('hello')
 #' }
 #'
 #' @export
 web3_sha3 <- function(data) {
-  get_post("web3_sha3", list(text_to_hex(data)))
+    get_post("web3_sha3", list(text_to_hex(data)))
 }

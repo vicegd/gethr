@@ -10,10 +10,12 @@ process_transaction(trans)
 \item{trans}{Objects - Information of the transaction in hexadecimal.}
 }
 \value{
-Object - Information of the transaction with values in plain text or decimal if possible.
+Object - Information of the transaction with values in plain text or
+  decimal if possible.
 }
 \description{
-\code{process_block} returns the values of the transactions in plain text or decimal if possible. The values are obtained from the Geth node.
+\code{process_block} returns the values of the transactions in plain text or
+decimal if possible. The values are obtained from the Geth node.
 }
 \seealso{
 Other utils functions: \code{\link{dec_to_hex}},

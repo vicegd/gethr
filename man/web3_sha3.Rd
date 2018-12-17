@@ -18,7 +18,7 @@ given data.
 }
 \examples{
 \donttest{
-web3_sha3("hello")
+web3_sha3('hello')
 }
 
 }

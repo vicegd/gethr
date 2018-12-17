@@ -20,12 +20,14 @@ admin_startWS(host = "127.0.0.1", port = 8546, cors = "",
 Boolean - \code{true} the execution was successful.
 }
 \description{
-\code{admin_startWS} starts a WebSocket based JSON RPC API webserver to handle client requests.
+\code{admin_startWS} starts a WebSocket based JSON RPC API webserver to
+handle client requests.
 }
 \examples{
 \donttest{
 admin_startWS()
-admin_startWS("193.23.92.1", 8999, "*", "eth,net,web3,personal,shh,miner,txpool,admin,debug")
+admin_startWS('193.23.92.1', 8999, '*', 'eth,net,web3,personal,shh,
+miner,txpool,admin,debug')
 }
 
 }

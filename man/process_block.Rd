@@ -10,10 +10,12 @@ process_block(block)
 \item{block}{Objects - Information of the block in hexadecimal.}
 }
 \value{
-Object - Information of the block with values in plain text or decimal if possible.
+Object - Information of the block with values in plain text or
+  decimal if possible.
 }
 \description{
-\code{process_block} returns the values of the block in plain text or decimal if possible. The values are obtained from the Geth node.
+\code{process_block} returns the values of the block in plain text or decimal
+if possible. The values are obtained from the Geth node.
 }
 \seealso{
 Other utils functions: \code{\link{dec_to_hex}},

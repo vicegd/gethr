@@ -7,10 +7,12 @@
 eth_mining()
 }
 \value{
-Boolean - \code{true} if the client is mining, otherwise \code{false}.
+Boolean - \code{true} if the client is mining, otherwise
+  \code{false}.
 }
 \description{
-\code{eth_mining} returns \code{true} if client is actively mining new blocks.
+\code{eth_mining} returns \code{true} if client is actively mining new
+blocks.
 }
 \examples{
 \donttest{

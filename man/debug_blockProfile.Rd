@@ -12,11 +12,13 @@ debug_blockProfile(file, seconds)
 \item{seconds}{Integer - Seconds to write the data.}
 }
 \description{
-\code{debug_blockProfile} turns on block profiling for the given duration and writes profile data to disk. It uses a profile rate of 1 for most accurate information.
+\code{debug_blockProfile} turns on block profiling for the given duration and
+writes profile data to disk. It uses a profile rate of 1 for most accurate
+information.
 }
 \examples{
 \donttest{
-debug_blockProfile("file.log", 5)
+debug_blockProfile('file.log', 5)
 }
 
 }

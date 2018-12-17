@@ -13,7 +13,8 @@ eth_getBlockTransactionCountByNumber(number)
 Integer - Number of transactions in the block.
 }
 \description{
-\code{eth_getBlockTransactionCountByNumber} returns the number of transactions in a block from a block matching the given block number.
+\code{eth_getBlockTransactionCountByNumber} returns the number of
+transactions in a block from a block matching the given block number.
 }
 \examples{
 \donttest{

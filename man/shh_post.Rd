@@ -23,22 +23,29 @@ shh_post(symKeyID = NULL, pubKey = NULL, sig = NULL, ttl,
 
 \item{padding}{String - Optional padding (byte array of arbitrary length).}
 
-\item{powTime}{Integer - Maximal time in seconds to be spent on proof of work.}
+\item{powTime}{Integer - Maximal time in seconds to be spent on proof of
+work.}
 
 \item{powTarget}{Integer - Minimal PoW target required for this message.}
 
 \item{targetPeer}{String - Optional peer ID (for peer-to-peer message only).}
 }
 \value{
-Boolean - \code{true} if the message was send, otherwise \code{false}.
+Boolean - \code{true} if the message was send, otherwise
+  \code{false}.
 }
 \description{
-\code{shh_post} creates a whisper message and injects it into the network for distribution.
+\code{shh_post} creates a whisper message and injects it into the network for
+distribution.
 }
 \examples{
 \donttest{
-shh_post(symKeyID = "7bc23b46b61e8223ef49241bd23b94921fb1e2dd8fd7bcb58df4159e1f4d3759", ttl = 7, topic = "0x07678231", payload = "0x68656c6c6f", powTime = 2, powTarget = 3)
-shh_post(pubKey = "0x0425670405b102c0ce487cefae7aa2bfd7b474b76bc8433499bec777bb15d6d8a6b95e3001d16de259bf3170ec4cff38f00321eedc8a808a2f2e67bec6b254a1b1", ttl = 7, payload = "0x68656c6c6f", powTime = 2, powTarget = 3)
+shh_post(symKeyID = '7bc23b46b61e8223ef49241bd23b94921fb1e2dd8fd7bcb58df41
+59e1f4d3759', ttl = 7, topic = '0x07678231', payload = '0x68656c6c6f',
+powTime = 2, powTarget = 3)
+shh_post(pubKey = '0x0425670405b102c0ce487cefae7aa2bfd7b474b76bc8433499bec
+777bb15d6d8a6b95e3001d16de259bf3170ec4cff38f00321eedc8a808a2f2e67bec6b254a
+1b1', ttl = 7, payload = '0x68656c6c6f', powTime = 2, powTarget = 3)
 }
 
 }

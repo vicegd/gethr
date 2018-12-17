@@ -10,10 +10,13 @@ admin_peers()
 Object - Properties with information about the peers.
 }
 \description{
-\code{admin_peers} returns all the information known about the connected remote nodes at the networking granularity.
+\code{admin_peers} returns all the information known about the connected
+remote nodes at the networking granularity.
 }
 \details{
-These include general information about the nodes themselves as participants of the P2P overlay protocol, as well as specialized information added by each of the running application protocols (e.g. eth, les, shh, bzz).
+These include general information about the nodes themselves as participants
+of the P2P overlay protocol, as well as specialized information added by each
+of the running application protocols (e.g. eth, les, shh, bzz).
 }
 \examples{
 \donttest{

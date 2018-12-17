@@ -10,11 +10,13 @@ debug_backtraceAt(path)
 \item{path}{String - Backtrace location.}
 }
 \description{
-\code{debug_backtraceAt} sets the logging backtrace location. When a backtrace location is set and a log message is emitted at that location, the stack of the goroutine executing the log statement will be printed to stderr.
+\code{debug_backtraceAt} sets the logging backtrace location. When a
+backtrace location is set and a log message is emitted at that location, the
+stack of the goroutine executing the log statement will be printed to stderr.
 }
 \examples{
 \donttest{
-debug_backtraceAt("my_server.go:443")
+debug_backtraceAt('my_server.go:443')
 }
 
 }

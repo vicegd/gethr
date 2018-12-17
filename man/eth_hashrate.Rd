@@ -10,7 +10,8 @@ eth_hashrate()
 Integer - Number of hashes per second.
 }
 \description{
-\code{eth_hashrate} returns the number of hashes per second that the node is mining with.
+\code{eth_hashrate} returns the number of hashes per second that the node is
+mining with.
 }
 \examples{
 \donttest{

@@ -1,2 +1,10 @@
+^\.travis\.yml$
 ^Meta$
 ^doc$
+.gitignore
+.Rbuildignore
+.RData
+.Rhistory
+gethr.Rproj
+my_notes
+temp

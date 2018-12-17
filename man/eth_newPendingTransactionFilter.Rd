@@ -10,7 +10,8 @@ eth_newPendingTransactionFilter()
 Hash - A filter Id.
 }
 \description{
-\code{eth_newPendingTransactionFilter} creates a filter in the node, to notify when new pending transactions arrive.
+\code{eth_newPendingTransactionFilter} creates a filter in the node, to
+notify when new pending transactions arrive.
 }
 \examples{
 \donttest{

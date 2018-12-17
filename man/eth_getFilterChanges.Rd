@@ -9,17 +9,19 @@ eth_getFilterChanges(id, hex = TRUE)
 \arguments{
 \item{id}{Integer - Filter Id.}
 
-\item{hex}{Boolean - \code{true} to get the response in hexadecimal, \code{false} to get a readable response.}
+\item{hex}{Boolean - \code{true} to get the response in hexadecimal,
+\code{false} to get a readable response.}
 }
 \value{
 Array of Object - Logs for a given filter since last poll.
 }
 \description{
-\code{eth_getFilterChanges} returns an array of logs which occurred since last poll.
+\code{eth_getFilterChanges} returns an array of logs which occurred since
+last poll.
 }
 \examples{
 \donttest{
-eth_getFilterChanges("0x75c1c2893a789a4cfb8e146464ea622b")
+eth_getFilterChanges('0x75c1c2893a789a4cfb8e146464ea622b')
 }
 
 }

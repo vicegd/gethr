@@ -10,14 +10,16 @@ shh_hasSymKey(id)
 \item{id}{String - ID of the symmetric key.}
 }
 \value{
-Boolean - \code{true} if the symmetric key exists, otherwise \code{false}.
+Boolean - \code{true} if the symmetric key exists, otherwise
+  \code{false}.
 }
 \description{
-\code{shh_hasSymKey} checks if the whisper node has a symmetric key given an ID.
+\code{shh_hasSymKey} checks if the whisper node has a symmetric key given an
+ID.
 }
 \examples{
 \donttest{
-shh_hasSymKey("4c5e37602b120904c592181e75917949c07b0d2f3111d41bb554b604e532c197")
+shh_hasSymKey('4c5e37602b120904c592181e75917949c07b0d2f3111d41bb554b604e532c197')
 }
 
 }

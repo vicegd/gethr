@@ -7,17 +7,19 @@
 debug_traceBlockFromFile(file)
 }
 \arguments{
-\item{file}{String - File containing the Recursive Length Prefix of the block.}
+\item{file}{String - File containing the Recursive Length Prefix of the
+block.}
 }
 \value{
 Object - Full stack trace of the block.
 }
 \description{
-\code{debug_traceBlockFromFile} return a full stack trace of all invoked opcodes of all transaction that were included included in this block.
+\code{debug_traceBlockFromFile} return a full stack trace of all invoked
+opcodes of all transaction that were included included in this block.
 }
 \examples{
 \donttest{
-debug_traceBlockFromFile("rlp.log")
+debug_traceBlockFromFile('rlp.log')
 }
 
 }

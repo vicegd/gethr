@@ -12,7 +12,8 @@ is.wholenumber(x, tol = .Machine$double.eps^0.5)
 \item{tol}{Double - Range to determine if the number is a whole number.}
 }
 \value{
-Boolean - \code{true} if the input is a whole number, \code{false} otherwise.
+Boolean - \code{true} if the input is a whole number, \code{false}
+  otherwise.
 }
 \description{
 \code{is.wholenumber} returns whether a value is a whole number.
@@ -20,7 +21,7 @@ Boolean - \code{true} if the input is a whole number, \code{false} otherwise.
 \examples{
 is.wholenumber(20)
 is.wholenumber(20.3)
-is.wholenumber("no")
+is.wholenumber('no')
 
 }
 \seealso{

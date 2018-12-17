@@ -7,13 +7,17 @@
 admin_nodeInfo()
 }
 \value{
-Object - Properties with information about the node (enode, version, port, ip, id, etc.).
+Object - Properties with information about the node (enode, version,
+  port, ip, id, etc.).
 }
 \description{
-\code{admin_nodeInfo} returns all the information known about the running Geth node at the networking granularity.
+\code{admin_nodeInfo} returns all the information known about the running
+Geth node at the networking granularity.
 }
 \details{
-These include general information about the node itself as a participant of the P2P overlay protocol, as well as specialized information added by each of the running application protocols (e.g. eth, les, shh, bzz).
+These include general information about the node itself as a participant of
+the P2P overlay protocol, as well as specialized information added by each of
+the running application protocols (e.g. eth, les, shh, bzz).
 }
 \examples{
 \donttest{

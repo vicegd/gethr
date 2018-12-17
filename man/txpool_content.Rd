@@ -7,10 +7,13 @@
 txpool_content()
 }
 \value{
-Object - Information about the pending and queued transactions to be inserted in the blockchain.
+Object - Information about the pending and queued transactions to be
+  inserted in the blockchain.
 }
 \description{
-\code{txpool_content} returns the list the exact details of all the transactions currently pending for inclusion in the next block(s), as well as the ones that are being scheduled for future execution only.
+\code{txpool_content} returns the list the exact details of all the
+transactions currently pending for inclusion in the next block(s), as well as
+the ones that are being scheduled for future execution only.
 }
 \examples{
 \donttest{

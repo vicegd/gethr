@@ -12,14 +12,16 @@ eth_submitHashrate(hashrate, id)
 \item{id}{Data - A random hexadecimal ID identifying the client.}
 }
 \value{
-Boolean - returns \code{true} if the provided solution is valid, otherwise \code{false}.
+Boolean - returns \code{true} if the provided solution is valid,
+  otherwise \code{false}.
 }
 \description{
 \code{eth_submitHashrate} is used for submitting mining hashrate.
 }
 \examples{
 \donttest{
-eth_submitHashrate(5200050, "0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef")
+eth_submitHashrate(5200050, '0x1234567890abcdef1234567890abcdef12345678
+90abcdef1234567890abcdef')
 }
 
 }

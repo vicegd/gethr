@@ -20,12 +20,14 @@ admin_startRPC(host = "127.0.0.1", port = 8545, cors = "",
 Boolean - \code{true} the execution was successful.
 }
 \description{
-\code{admin_startRPC} starts an HTTP based JSON RPC API webserver to handle client requests.
+\code{admin_startRPC} starts an HTTP based JSON RPC API webserver to handle
+client requests.
 }
 \examples{
 \donttest{
 admin_startRPC()
-admin_startRPC("193.23.92.1", 8999, "*", "eth,net,web3,personal,shh,miner,txpool,admin,debug")
+admin_startRPC('193.23.92.1', 8999, '*', 'eth,net,web3,personal,shh,miner,
+txpool,admin,debug')
 }
 
 }

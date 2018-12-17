@@ -18,18 +18,23 @@ shh_newMessageFilter(symKeyID = NULL, privateKeyID = NULL,
 
 \item{topics}{Array of Data - Possible topics (or partial topics).}
 
-\item{allowP2P}{Boolean - Indicates if this filter allows processing of direct peer-to-peer messages (which are not to be forwarded any further, because they might be expired).}
+\item{allowP2P}{Boolean - Indicates if this filter allows processing of
+direct peer-to-peer messages (which are not to be forwarded any further,
+because they might be expired).}
 }
 \value{
 String - Filter identifier.
 }
 \description{
-\code{shh_newMessageFilter} create a new filter within the node. This filter can be used to poll for new messages that match the set of criteria.
+\code{shh_newMessageFilter} create a new filter within the node. This filter
+can be used to poll for new messages that match the set of criteria.
 }
 \examples{
 \donttest{
-shh_newMessageFilter(symKeyID = "8e975ab6e0427396d3afb748678a09b036ebe389c1c5a6d39560adabdfdb08ca")
-shh_newMessageFilter(privateKeyID = "3794e3b08a2962b066e19869283974dc6b396cfc87cdcd69a2d269f5f1bab3cb", minPow = 0.3, allowP2P = TRUE)
+shh_newMessageFilter(symKeyID = '8e975ab6e0427396d3afb748678a09b036ebe389
+c1c5a6d39560adabdfdb08ca')
+shh_newMessageFilter(privateKeyID = '3794e3b08a2962b066e19869283974dc6b39
+6cfc87cdcd69a2d269f5f1bab3cb', minPow = 0.3, allowP2P = TRUE)
 }
 
 }
