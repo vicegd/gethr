@@ -1,6 +1,6 @@
 Package: gethr
 Type: Package
-Title: Access to Ethereum-based blockchains through Geth nodes using the R language
+Title: Access to Ethereum-based Blockchains through Geth Nodes Using the R Language
 Version: 0.1.0
 Authors@R: person("Vicente", "García Díaz", email = "garciavicente@uniovi.es", role = c("aut", "cre"))
 Description: More about what it does (maybe more than one line)
