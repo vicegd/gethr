@@ -25,7 +25,8 @@ e99b9187262b612f48a713a083cd1601bfe3bba761a908264320885633fa81d6d6ca0ef7a6e
 
 }
 \seealso{
-Other shh functions: \code{\link{shh_addPrivatekey}},
+Other shh functions: \code{\link{gethr}},
+  \code{\link{shh_addPrivatekey}},
   \code{\link{shh_addSymKey}},
   \code{\link{shh_deleteKeyPair}},
   \code{\link{shh_deleteSymKey}},

@@ -50,7 +50,8 @@ shh_post(pubKey = '0x0425670405b102c0ce487cefae7aa2bfd7b474b76bc8433499bec
 
 }
 \seealso{
-Other shh functions: \code{\link{shh_addPrivatekey}},
+Other shh functions: \code{\link{gethr}},
+  \code{\link{shh_addPrivatekey}},
   \code{\link{shh_addSymKey}},
   \code{\link{shh_deleteKeyPair}},
   \code{\link{shh_deleteSymKey}},

@@ -22,7 +22,8 @@ shh_addPrivatekey('0x6d795f707269766174655f6b6579')
 
 }
 \seealso{
-Other shh functions: \code{\link{shh_addSymKey}},
+Other shh functions: \code{\link{gethr}},
+  \code{\link{shh_addSymKey}},
   \code{\link{shh_deleteKeyPair}},
   \code{\link{shh_deleteSymKey}},
   \code{\link{shh_generateSymKeyFromPassword}},

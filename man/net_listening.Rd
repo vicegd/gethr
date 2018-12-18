@@ -20,7 +20,7 @@ net_listening()
 
 }
 \seealso{
-Other net functions: \code{\link{net_peerCount}},
-  \code{\link{net_version}}
+Other net functions: \code{\link{gethr}},
+  \code{\link{net_peerCount}}, \code{\link{net_version}}
 }
 \concept{net functions}

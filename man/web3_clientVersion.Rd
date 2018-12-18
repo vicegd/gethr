@@ -19,6 +19,7 @@ web3_clientVersion()
 
 }
 \seealso{
-Other web3 functions: \code{\link{web3_sha3}}
+Other web3 functions: \code{\link{gethr}},
+  \code{\link{web3_sha3}}
 }
 \concept{web3 functions}

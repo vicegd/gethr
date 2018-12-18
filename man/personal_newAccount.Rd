@@ -23,7 +23,8 @@ personal_newAccount('password')
 
 }
 \seealso{
-Other personal functions: \code{\link{personal_ecRecover}},
+Other personal functions: \code{\link{gethr}},
+  \code{\link{personal_ecRecover}},
   \code{\link{personal_importRawKey}},
   \code{\link{personal_listAccounts}},
   \code{\link{personal_lockAccount}},

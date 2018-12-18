@@ -19,7 +19,8 @@ shh_version()
 
 }
 \seealso{
-Other shh functions: \code{\link{shh_addPrivatekey}},
+Other shh functions: \code{\link{gethr}},
+  \code{\link{shh_addPrivatekey}},
   \code{\link{shh_addSymKey}},
   \code{\link{shh_deleteKeyPair}},
   \code{\link{shh_deleteSymKey}},

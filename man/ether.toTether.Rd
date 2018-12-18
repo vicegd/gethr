@@ -28,6 +28,7 @@ Other ether functions: \code{\link{ether.toEther}},
   \code{\link{ether.toGether}}, \code{\link{ether.toGwei}},
   \code{\link{ether.toKether}}, \code{\link{ether.toKwei}},
   \code{\link{ether.toMether}}, \code{\link{ether.toMwei}},
-  \code{\link{ether.toSzabo}}, \code{\link{ether.toWei}}
+  \code{\link{ether.toSzabo}}, \code{\link{ether.toWei}},
+  \code{\link{gethr}}
 }
 \concept{ether functions}

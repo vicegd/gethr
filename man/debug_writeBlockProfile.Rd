@@ -42,6 +42,6 @@ Other debug functions: \code{\link{debug_backtraceAt}},
   \code{\link{debug_traceTransaction}},
   \code{\link{debug_verbosity}},
   \code{\link{debug_vmodule}},
-  \code{\link{debug_writeMemProfile}}
+  \code{\link{debug_writeMemProfile}}, \code{\link{gethr}}
 }
 \concept{debug functions}

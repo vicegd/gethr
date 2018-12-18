@@ -4,13 +4,141 @@
 \name{gethr}
 \alias{gethr}
 \alias{gethr-package}
-\title{foo: A package for computating the notorious bar statistic.}
+\title{gethr: Access to Ethereum-based Blockchains through Geth Nodes Using the R
+Language}
 \description{
-The foo package provides three categories of important functions:
-foo, bar and baz.
+The gethr package provides full access to the Geth command line interface for
+running full Ethereum nodes. With gethr it is possible to carry out different
+tasks such as mine ether, transfer funds, create contacts, explore block
+history, etc. The package also provides access to all the available APIs. The
+officially exposed by Ethereum blockchains (\code{eth}, \code{shh},
+\code{web3}, \code{net}) and some provided directly by Geth (\code{admin},
+\code{debug}, \code{miner}, \code{personal}, \code{txpool}).
 }
-\section{Foo functions}{
+\seealso{
+Other admin functions: \code{\link{admin_addPeer}},
+  \code{\link{admin_datadir}},
+  \code{\link{admin_nodeInfo}}, \code{\link{admin_peers}},
+  \code{\link{admin_setSolc}},
+  \code{\link{admin_startRPC}},
+  \code{\link{admin_startWS}}, \code{\link{admin_stopRPC}},
+  \code{\link{admin_stopWS}}
 
-The foo functions ...
+Other debug functions: \code{\link{debug_backtraceAt}},
+  \code{\link{debug_blockProfile}},
+  \code{\link{debug_cpuProfile}},
+  \code{\link{debug_dumpBlock}},
+  \code{\link{debug_gcStats}},
+  \code{\link{debug_getBlockRlp}},
+  \code{\link{debug_goTrace}},
+  \code{\link{debug_memStats}},
+  \code{\link{debug_seedHash}},
+  \code{\link{debug_setBlockProfileRate}},
+  \code{\link{debug_setHead}}, \code{\link{debug_stacks}},
+  \code{\link{debug_startCPUProfile}},
+  \code{\link{debug_startGoTrace}},
+  \code{\link{debug_stopCPUProfile}},
+  \code{\link{debug_stopGoTrace}},
+  \code{\link{debug_traceBlockByHash}},
+  \code{\link{debug_traceBlockByNumber}},
+  \code{\link{debug_traceBlockFromFile}},
+  \code{\link{debug_traceBlock}},
+  \code{\link{debug_traceTransaction}},
+  \code{\link{debug_verbosity}},
+  \code{\link{debug_vmodule}},
+  \code{\link{debug_writeBlockProfile}},
+  \code{\link{debug_writeMemProfile}}
+
+Other eth functions: \code{\link{eth_accounts}},
+  \code{\link{eth_blockNumber}}, \code{\link{eth_call}},
+  \code{\link{eth_coinbase}},
+  \code{\link{eth_estimateGas}},
+  \code{\link{eth_gasPrice}}, \code{\link{eth_getBalance}},
+  \code{\link{eth_getBlockByHash}},
+  \code{\link{eth_getBlockByNumber}},
+  \code{\link{eth_getBlockTransactionCountByHash}},
+  \code{\link{eth_getBlockTransactionCountByNumber}},
+  \code{\link{eth_getCode}},
+  \code{\link{eth_getFilterChanges}},
+  \code{\link{eth_getFilterLogs}},
+  \code{\link{eth_getLogs}}, \code{\link{eth_getProof}},
+  \code{\link{eth_getStorageAt}},
+  \code{\link{eth_getTransactionByBlockHashAndIndex}},
+  \code{\link{eth_getTransactionByBlockNumberAndIndex}},
+  \code{\link{eth_getTransactionByHash}},
+  \code{\link{eth_getTransactionCount}},
+  \code{\link{eth_getTransactionReceipt}},
+  \code{\link{eth_getUncleByBlockHashAndIndex}},
+  \code{\link{eth_getUncleByBlockNumberAndIndex}},
+  \code{\link{eth_getUncleCountByBlockHash}},
+  \code{\link{eth_getUncleCountByBlockNumber}},
+  \code{\link{eth_getWork}}, \code{\link{eth_hashrate}},
+  \code{\link{eth_mining}},
+  \code{\link{eth_newBlockFilter}},
+  \code{\link{eth_newFilter}},
+  \code{\link{eth_newPendingTransactionFilter}},
+  \code{\link{eth_protocolVersion}},
+  \code{\link{eth_sendRawTransaction}},
+  \code{\link{eth_sendTransaction}},
+  \code{\link{eth_sign}}, \code{\link{eth_submitHashrate}},
+  \code{\link{eth_submitWork}}, \code{\link{eth_syncing}},
+  \code{\link{eth_uninstallFilter}},
+  \code{\link{personal_sendTransaction}}
+
+Other ether functions: \code{\link{ether.toEther}},
+  \code{\link{ether.toFinney}},
+  \code{\link{ether.toGether}}, \code{\link{ether.toGwei}},
+  \code{\link{ether.toKether}}, \code{\link{ether.toKwei}},
+  \code{\link{ether.toMether}}, \code{\link{ether.toMwei}},
+  \code{\link{ether.toSzabo}},
+  \code{\link{ether.toTether}}, \code{\link{ether.toWei}}
+
+Other miner functions: \code{\link{miner_setEtherBase}},
+  \code{\link{miner_setExtra}},
+  \code{\link{miner_setGasPrice}},
+  \code{\link{miner_start}}, \code{\link{miner_stop}}
+
+Other net functions: \code{\link{net_listening}},
+  \code{\link{net_peerCount}}, \code{\link{net_version}}
+
+Other personal functions: \code{\link{personal_ecRecover}},
+  \code{\link{personal_importRawKey}},
+  \code{\link{personal_listAccounts}},
+  \code{\link{personal_lockAccount}},
+  \code{\link{personal_newAccount}},
+  \code{\link{personal_sign}},
+  \code{\link{personal_unlockAccount}}
+
+Other shh functions: \code{\link{shh_addPrivatekey}},
+  \code{\link{shh_addSymKey}},
+  \code{\link{shh_deleteKeyPair}},
+  \code{\link{shh_deleteSymKey}},
+  \code{\link{shh_generateSymKeyFromPassword}},
+  \code{\link{shh_getPrivateKey}},
+  \code{\link{shh_getPublicKey}},
+  \code{\link{shh_getSymKey}},
+  \code{\link{shh_hasKeyPair}},
+  \code{\link{shh_hasSymKey}}, \code{\link{shh_info}},
+  \code{\link{shh_markTrustedPeer}},
+  \code{\link{shh_newKeyPair}},
+  \code{\link{shh_newMessageFilter}},
+  \code{\link{shh_newSymKey}}, \code{\link{shh_post}},
+  \code{\link{shh_setMaxMessageSize}},
+  \code{\link{shh_setMinPoW}}, \code{\link{shh_version}}
+
+Other txpool functions: \code{\link{txpool_content}},
+  \code{\link{txpool_inspect}}, \code{\link{txpool_status}}
+
+Other web3 functions: \code{\link{web3_clientVersion}},
+  \code{\link{web3_sha3}}
 }
-
+\concept{admin functions}
+\concept{debug functions}
+\concept{eth functions}
+\concept{ether functions}
+\concept{miner functions}
+\concept{net functions}
+\concept{personal functions}
+\concept{shh functions}
+\concept{txpool functions}
+\concept{web3 functions}

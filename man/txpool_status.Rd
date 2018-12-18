@@ -21,7 +21,8 @@ txpool_status()
 
 }
 \seealso{
-Other txpool functions: \code{\link{txpool_content}},
+Other txpool functions: \code{\link{gethr}},
+  \code{\link{txpool_content}},
   \code{\link{txpool_inspect}}
 }
 \concept{txpool functions}

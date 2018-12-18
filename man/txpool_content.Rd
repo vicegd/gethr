@@ -22,7 +22,7 @@ txpool_content()
 
 }
 \seealso{
-Other txpool functions: \code{\link{txpool_inspect}},
-  \code{\link{txpool_status}}
+Other txpool functions: \code{\link{gethr}},
+  \code{\link{txpool_inspect}}, \code{\link{txpool_status}}
 }
 \concept{txpool functions}

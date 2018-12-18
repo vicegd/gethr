@@ -22,7 +22,8 @@ miner_setEtherBase('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a')
 
 }
 \seealso{
-Other miner functions: \code{\link{miner_setExtra}},
+Other miner functions: \code{\link{gethr}},
+  \code{\link{miner_setExtra}},
   \code{\link{miner_setGasPrice}},
   \code{\link{miner_start}}, \code{\link{miner_stop}}
 }

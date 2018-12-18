@@ -66,7 +66,7 @@ Other eth functions: \code{\link{eth_accounts}},
   \code{\link{eth_sendTransaction}},
   \code{\link{eth_sign}}, \code{\link{eth_submitHashrate}},
   \code{\link{eth_submitWork}}, \code{\link{eth_syncing}},
-  \code{\link{eth_uninstallFilter}},
+  \code{\link{eth_uninstallFilter}}, \code{\link{gethr}},
   \code{\link{personal_sendTransaction}}
 }
 \concept{eth functions}

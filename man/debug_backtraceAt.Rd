@@ -43,6 +43,6 @@ Other debug functions: \code{\link{debug_blockProfile}},
   \code{\link{debug_verbosity}},
   \code{\link{debug_vmodule}},
   \code{\link{debug_writeBlockProfile}},
-  \code{\link{debug_writeMemProfile}}
+  \code{\link{debug_writeMemProfile}}, \code{\link{gethr}}
 }
 \concept{debug functions}

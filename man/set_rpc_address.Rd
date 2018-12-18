@@ -22,12 +22,12 @@ set_rpc_address('http://localhost', 8545)
 }
 \seealso{
 Other utils functions: \code{\link{dec_to_hex}},
-  \code{\link{get_post}}, \code{\link{get_rpc_address}},
-  \code{\link{hex_to_dec}}, \code{\link{hex_to_text}},
-  \code{\link{is.wholenumber}},
+  \code{\link{get_network_id}}, \code{\link{get_post}},
+  \code{\link{get_rpc_address}}, \code{\link{hex_to_dec}},
+  \code{\link{hex_to_text}}, \code{\link{is.wholenumber}},
   \code{\link{process_block}}, \code{\link{process_log}},
   \code{\link{process_receipt}},
   \code{\link{process_transaction}},
-  \code{\link{text_to_hex}}
+  \code{\link{set_network_id}}, \code{\link{text_to_hex}}
 }
 \concept{utils functions}

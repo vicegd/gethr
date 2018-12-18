@@ -36,6 +36,7 @@ Other admin functions: \code{\link{admin_addPeer}},
   \code{\link{admin_datadir}},
   \code{\link{admin_nodeInfo}}, \code{\link{admin_peers}},
   \code{\link{admin_setSolc}}, \code{\link{admin_startWS}},
-  \code{\link{admin_stopRPC}}, \code{\link{admin_stopWS}}
+  \code{\link{admin_stopRPC}}, \code{\link{admin_stopWS}},
+  \code{\link{gethr}}
 }
 \concept{admin functions}

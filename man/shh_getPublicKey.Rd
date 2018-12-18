@@ -22,7 +22,8 @@ shh_getPublicKey('7ade0794bf59b9a4508a3c5d7d3408f910fc575fb2f31845da7611cae66644
 
 }
 \seealso{
-Other shh functions: \code{\link{shh_addPrivatekey}},
+Other shh functions: \code{\link{gethr}},
+  \code{\link{shh_addPrivatekey}},
   \code{\link{shh_addSymKey}},
   \code{\link{shh_deleteKeyPair}},
   \code{\link{shh_deleteSymKey}},

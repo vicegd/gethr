@@ -16,6 +16,22 @@ dec_to_hex <- function(number) {
     sprintf("0x%x", number)
 }
 
+#' ID of the network.
+#'
+#' \code{get_network_id} returns the ID of the network that is being used.
+#'
+#' @family utils functions
+#'
+#' @return String - Network ID.
+#'
+#' @examples
+#' get_network_id()
+#'
+#' @export
+get_network_id <- function() {
+  gethr_env$id
+}
+
 #' RPC call helper method.
 #'
 #' \code{get_post} returns the response of the RPC call in the Geth node.
@@ -149,26 +165,6 @@ is.wholenumber <- function(x, tol = .Machine$double.eps^0.5) {
     }
 }
 
-#' Query of the RPC address of the node.
-#'
-#' \code{set_rpc_address} sets the RPC address that is being used to connect to
-#' the Geth node.
-#'
-#' @family utils functions
-#'
-#' @param url String - URL of the Geth node.
-#' @param port Integer - Port of the Geth node.
-#'
-#' @examples
-#' set_rpc_address('http://153.35.91.1', 8600)
-#' set_rpc_address('http://localhost', 8545)
-#'
-#' @export
-set_rpc_address <- function(url, port) {
-    url <- paste(url, port, sep = ":")
-    gethr_env$rpc_address <- url
-}
-
 #' Values of the blocks in plain text or decimal instead of hexadecimal.
 #'
 #' \code{process_block} returns the values of the block in plain text or decimal
@@ -253,6 +249,43 @@ process_transaction <- function(trans) {
     trans$value <- hex_to_dec(trans$value)
     trans$v <- hex_to_dec(trans$v)
     return(trans)
+}
+
+#' ID of the network update.
+#'
+#' \code{set_network_id} sets the ID of the network that is being used.
+#'
+#' @family utils functions
+#'
+#' @param id String|Integer - ID of the network.
+#'
+#' @examples
+#' set_network_id(7000)
+#' set_network_id("my_network_id")
+#'
+#' @export
+set_network_id <- function(id) {
+  gethr_env$id <- id
+}
+
+#' Query of the RPC address of the node.
+#'
+#' \code{set_rpc_address} sets the RPC address that is being used to connect to
+#' the Geth node.
+#'
+#' @family utils functions
+#'
+#' @param url String - URL of the Geth node.
+#' @param port Integer - Port of the Geth node.
+#'
+#' @examples
+#' set_rpc_address('http://153.35.91.1', 8600)
+#' set_rpc_address('http://localhost', 8545)
+#'
+#' @export
+set_rpc_address <- function(url, port) {
+  url <- paste(url, port, sep = ":")
+  gethr_env$rpc_address <- url
 }
 
 #' String to hexadecimal conversion.

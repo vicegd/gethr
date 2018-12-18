@@ -19,7 +19,7 @@ net_version()
 
 }
 \seealso{
-Other net functions: \code{\link{net_listening}},
-  \code{\link{net_peerCount}}
+Other net functions: \code{\link{gethr}},
+  \code{\link{net_listening}}, \code{\link{net_peerCount}}
 }
 \concept{net functions}

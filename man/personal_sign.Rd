@@ -28,7 +28,8 @@ personal_sign('0xb117a8bc3ecf2c3f006b89da6826e49b4193977a', 'hello world',
 
 }
 \seealso{
-Other personal functions: \code{\link{personal_ecRecover}},
+Other personal functions: \code{\link{gethr}},
+  \code{\link{personal_ecRecover}},
   \code{\link{personal_importRawKey}},
   \code{\link{personal_listAccounts}},
   \code{\link{personal_lockAccount}},

@@ -25,4 +25,24 @@ testthat::test_that("whole numbers are identified", {
   testthat::expect_equal(is.wholenumber("hello"), FALSE)
   testthat::expect_equal(is.wholenumber(TRUE), FALSE)
 })
+
+testthat::test_that("Network ID can be managed correctly", {
+  id <- "my_network_id"
+  set_network_id(id)
+  testthat::expect_equal(get_network_id(), id)
+  id <- 1
+  set_network_id(id)
+  testthat::expect_equal(get_network_id(), id)
+})
+
+testthat::test_that("RPC address can be managed correctly", {
+  url <- "200.25.92.1"
+  port <- 9000
+  set_rpc_address(url, port)
+  testthat::expect_equal(get_rpc_address(), paste(url, port, sep = ":"))
+  url <- "localhost"
+  port <- 8545
+  set_rpc_address(url, port)
+  testthat::expect_equal(get_rpc_address(), paste(url, port, sep = ":"))
+})
 }

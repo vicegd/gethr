@@ -41,6 +41,7 @@ Other debug functions: \code{\link{debug_backtraceAt}},
   \code{\link{debug_traceTransaction}},
   \code{\link{debug_verbosity}},
   \code{\link{debug_vmodule}},
-  \code{\link{debug_writeBlockProfile}}
+  \code{\link{debug_writeBlockProfile}},
+  \code{\link{gethr}}
 }
 \concept{debug functions}

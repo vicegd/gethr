@@ -16,7 +16,8 @@ miner_stop()
 
 }
 \seealso{
-Other miner functions: \code{\link{miner_setEtherBase}},
+Other miner functions: \code{\link{gethr}},
+  \code{\link{miner_setEtherBase}},
   \code{\link{miner_setExtra}},
   \code{\link{miner_setGasPrice}},
   \code{\link{miner_start}}

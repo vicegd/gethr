@@ -23,6 +23,7 @@ web3_sha3('hello')
 
 }
 \seealso{
-Other web3 functions: \code{\link{web3_clientVersion}}
+Other web3 functions: \code{\link{gethr}},
+  \code{\link{web3_clientVersion}}
 }
 \concept{web3 functions}

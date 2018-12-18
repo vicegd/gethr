@@ -27,7 +27,8 @@ personal_ecRecover('hello world', '0x1dd3657c91d95f350ab25f17ee7cbcdbccd3f5bc
 
 }
 \seealso{
-Other personal functions: \code{\link{personal_importRawKey}},
+Other personal functions: \code{\link{gethr}},
+  \code{\link{personal_importRawKey}},
   \code{\link{personal_listAccounts}},
   \code{\link{personal_lockAccount}},
   \code{\link{personal_newAccount}},
