@@ -19,7 +19,7 @@ net_listening <- function() {
 
 #' Number of peers connected.
 #'
-#' \code{net_peerCount} returns number of peers currently connected to the
+#' \code{net_peerCount} returns the number of peers currently connected to the
 #' client.
 #'
 #' @family net functions

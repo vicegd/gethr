@@ -65,8 +65,8 @@ personal_listAccounts <- function() {
 
 #' Account deletion.
 #'
-#' \code{personal_lockAccount} removes the private key with given address from
-#' memory. The account can no longer be used to send transactions.
+#' \code{personal_lockAccount} removes the private key with the given address
+#' from memory. The account can no longer be used to send transactions.
 #'
 #' @family personal functions
 #'
@@ -108,7 +108,7 @@ personal_newAccount <- function(password) {
 #' New transaction
 #'
 #' \code{personal_sendTransaction} creates new message call transaction or a
-#' contract creation, if the data field contains code.
+#' contract if the data field contains code.
 #'
 #' @family eth functions
 #'
@@ -139,18 +139,17 @@ personal_newAccount <- function(password) {
 #' }
 #'
 #' @export
-personal_sendTransaction <- function(from, data = -1, to = -1, gas = 90000, gas_price = -1, value = -1, nonce = -1,
-    password) {
+personal_sendTransaction <- function(from, data = -1, to = -1, gas = 90000, gas_price = -1, value = -1, nonce = -1, password) {
     params <- list(from = from, gas = dec_to_hex(gas))
-    if (data != -1)
+    if (data != -1) 
         params = append(params, list(data = data))
-    if (to != -1)
+    if (to != -1) 
         params = append(params, list(to = to))
-    if (gas_price != -1)
+    if (gas_price != -1) 
         params = append(params, list(gas_price = gas_price))
-    if (value != -1)
+    if (value != -1) 
         params = append(params, list(value = dec_to_hex(value)))
-    if (nonce != -1)
+    if (nonce != -1) 
         params = append(params, list(nonce = nonce))
     get_post("personal_sendTransaction", list(params, password))
 }

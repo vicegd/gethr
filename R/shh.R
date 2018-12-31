@@ -40,7 +40,7 @@ shh_addSymKey <- function(key) {
 
 #' Key pair deletion.
 #'
-#' \code{shh_addPrivatekey} deletes the specifies key pair if it exists.
+#' \code{shh_deleteKeyPair} deletes the specific key pair if it exists.
 #'
 #' @family shh functions
 #'
@@ -60,7 +60,7 @@ shh_deleteKeyPair <- function(id) {
 
 #' Symmetric key deletion.
 #'
-#' \code{shh_deleteSymKey} deletes the specifies symmetric key if it exists.
+#' \code{shh_deleteSymKey} deletes the specific symmetric key if it exists.
 #'
 #' @family shh functions
 #'
@@ -290,20 +290,19 @@ shh_newKeyPair <- function() {
 #' }
 #'
 #' @export
-shh_newMessageFilter <- function(symKeyID = NULL, privateKeyID = NULL, sig = NULL, minPow = NULL, topics = NULL,
-    allowP2P = NULL) {
+shh_newMessageFilter <- function(symKeyID = NULL, privateKeyID = NULL, sig = NULL, minPow = NULL, topics = NULL, allowP2P = NULL) {
     params <- list()
-    if (!is.null(symKeyID))
+    if (!is.null(symKeyID)) 
         params = append(params, list(symKeyID = symKeyID))
-    if (!is.null(privateKeyID))
+    if (!is.null(privateKeyID)) 
         params = append(params, list(privateKeyID = privateKeyID))
-    if (!is.null(sig))
+    if (!is.null(sig)) 
         params = append(params, list(sig = sig))
-    if (!is.null(minPow))
+    if (!is.null(minPow)) 
         params = append(params, list(minPow))
-    if (!is.null(topics))
+    if (!is.null(topics)) 
         params = append(params, list(topics = topics))
-    if (!is.null(allowP2P))
+    if (!is.null(allowP2P)) 
         params = append(params, list(allowP2P = allowP2P))
     get_post("shh_newMessageFilter", list(params))
 }
@@ -311,7 +310,7 @@ shh_newMessageFilter <- function(symKeyID = NULL, privateKeyID = NULL, sig = NUL
 #' Symmetric key creation and storage.
 #'
 #' \code{shh_newSymKey} generates a random symmetric key and stores it under an
-#' ID, which is then returned. Can be used encrypting and decrypting messages
+#' ID, which is then returned. It can be used encrypting and decrypting messages
 #' where the key is known to both parties.
 #'
 #' @family shh functions
@@ -362,20 +361,19 @@ shh_newSymKey <- function() {
 #' }
 #'
 #' @export
-shh_post <- function(symKeyID = NULL, pubKey = NULL, sig = NULL, ttl, topic = NULL, payload, padding = NULL,
-    powTime, powTarget, targetPeer = NULL) {
+shh_post <- function(symKeyID = NULL, pubKey = NULL, sig = NULL, ttl, topic = NULL, payload, padding = NULL, powTime, powTarget, targetPeer = NULL) {
     params <- list(ttl = ttl, payload = payload, powTime = powTime, powTarget = powTarget)
-    if (!is.null(symKeyID))
+    if (!is.null(symKeyID)) 
         params = append(params, list(symKeyID = symKeyID))
-    if (!is.null(pubKey))
+    if (!is.null(pubKey)) 
         params = append(params, list(pubKey = pubKey))
-    if (!is.null(sig))
+    if (!is.null(sig)) 
         params = append(params, list(sig = sig))
-    if (!is.null(topic))
+    if (!is.null(topic)) 
         params = append(params, list(topic = topic))
-    if (!is.null(padding))
+    if (!is.null(padding)) 
         params = append(params, list(padding = padding))
-    if (!is.null(targetPeer))
+    if (!is.null(targetPeer)) 
         params = append(params, list(targetPeer = targetPeer))
     get_post("shh_post", list(params))
 }

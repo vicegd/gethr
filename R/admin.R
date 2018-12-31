@@ -1,6 +1,6 @@
 #' New node based on the enode
 #'
-#' \code{admin_addPeer} requests adding a new remote node to the list of tracked
+#' \code{admin_addPeer} request to add a new remote node to the list of tracked
 #' static nodes.
 #'
 #' @family admin functions
@@ -23,7 +23,7 @@ admin_addPeer <- function(enode) {
 
 #' Path being used by the node.
 #'
-#' \code{admin_datadir} returns the absolute path the running Geth node.
+#' \code{admin_datadir} returns the absolute path of the running Geth node.
 #'
 #' @family admin functions
 #'

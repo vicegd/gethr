@@ -1,6 +1,6 @@
 #' Addresses owned by client.
 #'
-#' \code{eth_accounts} returns a list of addresses owned by client.
+#' \code{eth_accounts} returns a list of addresses owned by the client.
 #'
 #' @family eth functions
 #'
@@ -67,13 +67,13 @@ eth_blockNumber <- function() {
 #' @export
 eth_call <- function(from = -1, to, gas = 30000, gas_price = -1, value = -1, data = -1, number = "latest") {
     params <- list(to = to, gas = dec_to_hex(gas))
-    if (from != -1)
+    if (from != -1) 
         params = append(params, list(from = from))
-    if (gas_price != -1)
+    if (gas_price != -1) 
         params = append(params, list(gas_price = gas_price))
-    if (value != -1)
+    if (value != -1) 
         params = append(params, list(value = dec_to_hex(value)))
-    if (data != -1)
+    if (data != -1) 
         params = append(params, list(data = data))
     get_post("eth_call", list(params, number))
 }
@@ -130,7 +130,7 @@ eth_estimateGas <- function(to, data) {
 
 #' Gas price.
 #'
-#' \code{eth_gasPrice} returns the current price per gas in wei.
+#' \code{eth_gasPrice} returns the current price per gas in \code{weis}.
 #'
 #' @family eth functions
 #'
@@ -148,7 +148,7 @@ eth_gasPrice <- function() {
 
 #' Balance of an account.
 #'
-#' \code{eth_getBalance} returns the balance of the account of given address.
+#' \code{eth_getBalance} returns the balance of the account of the given address.
 #'
 #' @family eth functions
 #'
@@ -168,9 +168,9 @@ eth_gasPrice <- function() {
 #'
 #' @export
 eth_getBalance <- function(address = NULL, number = "latest") {
-    if (is.null(address))
+    if (is.null(address)) 
         address = eth_coinbase()
-    if (is.wholenumber(number))
+    if (is.wholenumber(number)) 
         number = dec_to_hex(number)
     hex_to_dec(get_post("eth_getBalance", list(address, number)))
 }
@@ -238,7 +238,7 @@ eth_getBlockByHash <- function(hash, full = TRUE, hex = TRUE) {
 #'
 #' @export
 eth_getBlockByNumber <- function(number = "latest", full = TRUE, hex = TRUE) {
-    if (is.wholenumber(number))
+    if (is.wholenumber(number)) 
         number = dec_to_hex(number)
     block = get_post("eth_getBlockByNumber", list(number, full))
     if (!is.null(block)) {
@@ -319,7 +319,7 @@ eth_getBlockTransactionCountByNumber <- function(number) {
 #'
 #' @export
 eth_getCode <- function(address, number = "latest") {
-    if (is.wholenumber(number))
+    if (is.wholenumber(number)) 
         number = dec_to_hex(number)
     get_post("eth_getCode", list(address, number))
 }
@@ -345,13 +345,13 @@ eth_getCode <- function(address, number = "latest") {
 #' @export
 eth_getFilterChanges <- function(id, hex = TRUE) {
     logs = get_post("eth_getFilterChanges", list(id))
-
+    
     if ((hex == FALSE) && (length(logs) > 0)) {
         for (i in 1:length(logs)) {
             logs[[i]] <- process_log(logs[[i]])
         }
     }
-
+    
     return(logs)
 }
 
@@ -376,7 +376,7 @@ eth_getFilterChanges <- function(id, hex = TRUE) {
 #' @export
 eth_getFilterLogs <- function(id, hex = TRUE) {
     logs = get_post("eth_getFilterLogs", list(id))
-
+    
     if ((hex == FALSE) && (length(logs) > 0)) {
         for (i in 1:length(logs)) {
             logs[[i]] <- process_log(logs[[i]])
@@ -416,12 +416,12 @@ eth_getFilterLogs <- function(id, hex = TRUE) {
 #'
 #' @export
 eth_getLogs <- function(from_block = "earliest", to_block = "latest", address, topics = -1, block_hash = -1) {
-    if (is.wholenumber(from_block))
+    if (is.wholenumber(from_block)) 
         from_block = dec_to_hex(from_block)
-    if (is.wholenumber(to_block))
+    if (is.wholenumber(to_block)) 
         to_block = dec_to_hex(to_block)
     options <- list(fromBlock = from_block, toBlock = to_block, address = address)
-    if (topics[1] != -1)
+    if (topics[1] != -1) 
         options = append(options, list(topics = topics))
     if (block_hash != -1) {
         options = append(options, list(blockhash = block_hash))
@@ -454,7 +454,7 @@ eth_getLogs <- function(from_block = "earliest", to_block = "latest", address, t
 #'
 #' @export
 eth_getProof <- function(address, keys, number = "latest") {
-    if (is.wholenumber(number))
+    if (is.wholenumber(number)) 
         number = dec_to_hex(number)
     get_post("eth_getProof", list(address, keys, number))
 }
@@ -482,40 +482,9 @@ eth_getProof <- function(address, keys, number = "latest") {
 #'
 #' @export
 eth_getStorageAt <- function(address, position, number = "latest") {
-    if (is.wholenumber(number))
+    if (is.wholenumber(number)) 
         number = dec_to_hex(number)
     get_post("eth_getStorageAt", list(address, position, number))
-}
-
-#' Transaction information given a transaction hash.
-#'
-#' \code{eth_getTransactionByHash} returns the information about a transaction
-#' requested by transaction hash.
-#'
-#' @family eth functions
-#'
-#' @param hash Hash - Hash of the transaction.
-#' @param hex Boolean - \code{true} to get the response in hexadecimal,
-#'   \code{false} to get a readable response.
-#'
-#' @return Object - A transaction object, or \cite{null} when no transaction was
-#'   found.
-#'
-#' @examples
-#' \donttest{
-#' eth_getTransactionByHash('0xb61a9ca11109646bfd056f8be9e1e183a1b1bea3c281e73c
-#' c4f17d332fa69a05')
-#' eth_getTransactionByHash('0xcb33fb7850764aefd3cedd3dcae186cbd8bda74ca2822e4c
-#' 59115b1c6b5c48bf', FALSE)
-#' }
-#'
-#' @export
-eth_getTransactionByHash <- function(hash, hex = TRUE) {
-    trans = get_post("eth_getTransactionByHash", list(hash))
-    if ((!is.null(trans$hash)) && (hex == FALSE)) {
-        trans = process_transaction(trans)
-    }
-    return(trans)
 }
 
 #' Transaction information given a block hash and an index position.
@@ -576,9 +545,40 @@ eth_getTransactionByBlockHashAndIndex <- function(block_hash, trans_index, hex =
 #'
 #' @export
 eth_getTransactionByBlockNumberAndIndex <- function(block_number, trans_index, hex = TRUE) {
-    if (is.wholenumber(block_number))
+    if (is.wholenumber(block_number)) 
         block_number = dec_to_hex(block_number)
     trans = get_post("eth_getTransactionByBlockNumberAndIndex", list(block_number, dec_to_hex(trans_index)))
+    if ((!is.null(trans$hash)) && (hex == FALSE)) {
+        trans = process_transaction(trans)
+    }
+    return(trans)
+}
+
+#' Transaction information given a transaction hash.
+#'
+#' \code{eth_getTransactionByHash} returns the information about a transaction
+#' requested by transaction hash.
+#'
+#' @family eth functions
+#'
+#' @param hash Hash - Hash of the transaction.
+#' @param hex Boolean - \code{true} to get the response in hexadecimal,
+#'   \code{false} to get a readable response.
+#'
+#' @return Object - A transaction object, or \cite{null} when no transaction was
+#'   found.
+#'
+#' @examples
+#' \donttest{
+#' eth_getTransactionByHash('0xb61a9ca11109646bfd056f8be9e1e183a1b1bea3c281e73c
+#' c4f17d332fa69a05')
+#' eth_getTransactionByHash('0xcb33fb7850764aefd3cedd3dcae186cbd8bda74ca2822e4c
+#' 59115b1c6b5c48bf', FALSE)
+#' }
+#'
+#' @export
+eth_getTransactionByHash <- function(hash, hex = TRUE) {
+    trans = get_post("eth_getTransactionByHash", list(hash))
     if ((!is.null(trans$hash)) && (hex == FALSE)) {
         trans = process_transaction(trans)
     }
@@ -608,9 +608,9 @@ eth_getTransactionByBlockNumberAndIndex <- function(block_number, trans_index, h
 #'
 #' @export
 eth_getTransactionCount <- function(address = NULL, number = "latest") {
-    if (is.null(address))
+    if (is.null(address)) 
         address = eth_coinbase()
-    if (is.wholenumber(number))
+    if (is.wholenumber(number)) 
         number = dec_to_hex(number)
     hex_to_dec(get_post("eth_getTransactionCount", list(address, number)))
 }
@@ -618,7 +618,7 @@ eth_getTransactionCount <- function(address = NULL, number = "latest") {
 #' Transaction receipt.
 #'
 #' \code{eth_getTransactionReceipt} returns the receipt of a transaction by
-#' transaction hash..
+#' transaction hash.
 #'
 #' @family eth functions
 #'
@@ -697,7 +697,7 @@ eth_getUncleByBlockHashAndIndex <- function(block_hash, uncle_index, hex = TRUE)
 #'
 #' @export
 eth_getUncleByBlockNumberAndIndex <- function(block_number, uncle_index, hex = TRUE) {
-    if (is.wholenumber(block_number))
+    if (is.wholenumber(block_number)) 
         block_number = dec_to_hex(block_number)
     block = get_post("eth_getUncleByBlockNumberAndIndex", list(block_number, dec_to_hex(uncle_index)))
     if ((!is.null(block)) && (hex == FALSE)) {
@@ -728,26 +728,6 @@ eth_getUncleCountByBlockHash <- function(hash) {
     hex_to_dec(get_post("eth_getUncleCountByBlockHash", list(hash)))
 }
 
-#' Work performed by the current block
-#'
-#' \code{eth_getWork} returns the hash of the current block, the seedHash, and
-#' the boundary condition to be met the target.
-#'
-#' @family eth functions
-#'
-#' @return Object - Information about the block header pow-hash, the seed hash
-#'   used for the DAG and the boundary condition / target.
-#'
-#' @examples
-#' \donttest{
-#' eth_getWork()
-#' }
-#'
-#' @export
-eth_getWork <- function() {
-    get_post("eth_getWork")
-}
-
 #' Uncles in a block given a number.
 #'
 #' \code{eth_getUncleCountByBlockNumber} returns the number of uncles in a block
@@ -767,6 +747,26 @@ eth_getWork <- function() {
 #' @export
 eth_getUncleCountByBlockNumber <- function(number) {
     hex_to_dec(get_post("eth_getUncleCountByBlockNumber", list(dec_to_hex(number))))
+}
+
+#' Work performed by the current block
+#'
+#' \code{eth_getWork} returns the hash of the current block, the seedHash, and
+#' the boundary condition to meet the target.
+#'
+#' @family eth functions
+#'
+#' @return Object - Information about the block header pow-hash, the seed hash
+#'   used for the DAG and the boundary condition / target.
+#'
+#' @examples
+#' \donttest{
+#' eth_getWork()
+#' }
+#'
+#' @export
+eth_getWork <- function() {
+    get_post("eth_getWork")
 }
 
 #' Hashes per second that are mined.
@@ -855,12 +855,12 @@ eth_newBlockFilter <- function() {
 #'
 #' @export
 eth_newFilter <- function(from_block = "earliest", to_block = "latest", address, topics = -1) {
-    if (is.wholenumber(from_block))
+    if (is.wholenumber(from_block)) 
         from_block = dec_to_hex(from_block)
-    if (is.wholenumber(to_block))
+    if (is.wholenumber(to_block)) 
         to_block = dec_to_hex(to_block)
     options <- list(fromBlock = from_block, toBlock = to_block, address = address)
-    if (topics[1] != -1)
+    if (topics[1] != -1) 
         options = append(options, list(topics = topics))
     get_post("eth_newFilter", list(options))
 }
@@ -958,22 +958,22 @@ eth_sendRawTransaction <- function(data) {
 #' @export
 eth_sendTransaction <- function(from, data = -1, to = -1, gas = 90000, gas_price = -1, value = -1, nonce = -1) {
     params <- list(from = from, gas = dec_to_hex(gas))
-    if (data != -1)
+    if (data != -1) 
         params = append(params, list(data = data))
-    if (to != -1)
+    if (to != -1) 
         params = append(params, list(to = to))
-    if (gas_price != -1)
+    if (gas_price != -1) 
         params = append(params, list(gas_price = gas_price))
-    if (value != -1)
+    if (value != -1) 
         params = append(params, list(value = dec_to_hex(value)))
-    if (nonce != -1)
+    if (nonce != -1) 
         params = append(params, list(nonce = nonce))
     get_post("eth_sendTransaction", list(params))
 }
 
 #' Ethereum specific signature
 #'
-#' \code{eth_sign} returns an Ethereum specific signature with \code{keccak256}.
+#' \code{eth_sign} returns an Ethereum specific signature with Keccak256.
 #'
 #' By adding a prefix to the message makes the calculated signature recognisable
 #' as an Ethereum specific signature. This prevents misuse where a malicious
@@ -999,7 +999,7 @@ eth_sign <- function(address, message) {
 
 #' Mining hashrate submission.
 #'
-#' \code{eth_submitHashrate} is used for submitting mining hashrate.
+#' \code{eth_submitHashrate} submits mining hashrate.
 #'
 #' @family eth functions
 #'
@@ -1022,7 +1022,7 @@ eth_submitHashrate <- function(hashrate, id) {
 
 #' Proof-of-work submission
 #'
-#' \code{eth_submitWork} is used for submitting a proof-of-work solution.
+#' \code{eth_submitWork} submits a proof-of-work solution.
 #'
 #' @family eth functions
 #'

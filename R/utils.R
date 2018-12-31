@@ -29,7 +29,7 @@ dec_to_hex <- function(number) {
 #'
 #' @export
 get_network_id <- function() {
-  gethr_env$id
+    gethr_env$id
 }
 
 #' RPC call helper method.
@@ -57,7 +57,7 @@ get_post <- function(method, params = list()) {
     # print(body_json)
     response = httr::POST(url = gethr_env$rpc_address, httr::content_type_json(), body = body_json)
     response_parsed = httr::content(response, "parsed")
-    if (!is.null(response_parsed$result))
+    if (!is.null(response_parsed$result)) 
         return(response_parsed$result) else {
         return(response_parsed)
     }
@@ -261,11 +261,11 @@ process_transaction <- function(trans) {
 #'
 #' @examples
 #' set_network_id(7000)
-#' set_network_id("my_network_id")
+#' set_network_id('my_network_id')
 #'
 #' @export
 set_network_id <- function(id) {
-  gethr_env$id <- id
+    gethr_env$id <- id
 }
 
 #' Query of the RPC address of the node.
@@ -284,8 +284,8 @@ set_network_id <- function(id) {
 #'
 #' @export
 set_rpc_address <- function(url, port) {
-  url <- paste(url, port, sep = ":")
-  gethr_env$rpc_address <- url
+    url <- paste(url, port, sep = ":")
+    gethr_env$rpc_address <- url
 }
 
 #' String to hexadecimal conversion.

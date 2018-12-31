@@ -2,7 +2,7 @@
 #'
 #' \code{debug_backtraceAt} sets the logging backtrace location. When a
 #' backtrace location is set and a log message is emitted at that location, the
-#' stack of the goroutine executing the log statement will be printed to stderr.
+#' stack of the goroutine executing the log statement will be printed to \code{stderr}.
 #'
 #' @family debug functions
 #'
@@ -312,7 +312,7 @@ debug_stopGoTrace <- function() {
 #' Full trace of a block.
 #'
 #' \code{debug_traceBlock} returns a full stack trace of all invoked opcodes of
-#' all transaction that were included included in this block.
+#' all transaction that were included in this block.
 #'
 #' @family debug functions
 #'
@@ -347,7 +347,7 @@ debug_traceBlock <- function(block) {
 #' Full trace of a block by hash.
 #'
 #' \code{debug_traceBlockByHash} returns a full stack trace of all invoked
-#' opcodes of all transaction that were included included in this block.
+#' opcodes of all transaction that were included in this block by hash.
 #'
 #' @family debug functions
 #'
@@ -369,7 +369,7 @@ debug_traceBlockByHash <- function(hash) {
 #' Full trace of a block by number.
 #'
 #' \code{debug_traceBlockByNumber} returns a full stack trace of all invoked
-#' opcodes of all transaction that were included included in this block.
+#' opcodes of all transaction that were included in this block by number.
 #'
 #' @family debug functions
 #'
@@ -389,8 +389,9 @@ debug_traceBlockByNumber <- function(number) {
 
 #' Full trace of a block using a file as input.
 #'
-#' \code{debug_traceBlockFromFile} return a full stack trace of all invoked
-#' opcodes of all transaction that were included included in this block.
+#' \code{debug_traceBlockFromFile} returns a full stack trace of all invoked
+#' opcodes of all transaction that were included in this block using a file
+#' as input.
 #'
 #' @family debug functions
 #'
@@ -441,8 +442,7 @@ debug_traceBlockFromFile <- function(file) {
 #' }
 #'
 #' @export
-debug_traceTransaction <- function(hash, disableStorage = NULL, disableMemory = NULL, disableStack = NULL, tracer = NULL, 
-    timeout = NULL) {
+debug_traceTransaction <- function(hash, disableStorage = NULL, disableMemory = NULL, disableStack = NULL, tracer = NULL, timeout = NULL) {
     params <- list()
     if (!is.null(disableStorage)) 
         params = append(params, list(disableStorage = disableStorage))
