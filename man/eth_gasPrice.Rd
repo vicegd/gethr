@@ -10,7 +10,7 @@ eth_gasPrice()
 Integer - Current gas price in wei.
 }
 \description{
-\code{eth_gasPrice} returns the current price per gas in wei.
+\code{eth_gasPrice} returns the current price per gas in \code{weis}.
 }
 \examples{
 \donttest{

@@ -16,7 +16,7 @@ Boolean - returns \code{true} if the provided solution is valid,
   otherwise \code{false}.
 }
 \description{
-\code{eth_submitHashrate} is used for submitting mining hashrate.
+\code{eth_submitHashrate} submits mining hashrate.
 }
 \examples{
 \donttest{

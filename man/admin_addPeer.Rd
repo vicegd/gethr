@@ -14,7 +14,7 @@ Boolean - \code{true} the peer was accepted for tracking or
   \code{false} if some error occurred.
 }
 \description{
-\code{admin_addPeer} requests adding a new remote node to the list of tracked
+\code{admin_addPeer} request to add a new remote node to the list of tracked
 static nodes.
 }
 \examples{

@@ -18,7 +18,7 @@ Boolean - returns \code{true} if the provided solution is valid,
   otherwise \code{false}.
 }
 \description{
-\code{eth_submitWork} is used for submitting a proof-of-work solution.
+\code{eth_submitWork} submits a proof-of-work solution.
 }
 \examples{
 \donttest{

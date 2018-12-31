@@ -14,8 +14,9 @@ block.}
 Object - Full stack trace of the block.
 }
 \description{
-\code{debug_traceBlockFromFile} return a full stack trace of all invoked
-opcodes of all transaction that were included included in this block.
+\code{debug_traceBlockFromFile} returns a full stack trace of all invoked
+opcodes of all transaction that were included in this block using a file
+as input.
 }
 \examples{
 \donttest{

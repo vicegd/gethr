@@ -16,7 +16,7 @@ or 'pending'.}
 Integer - Current balance in wei.
 }
 \description{
-\code{eth_getBalance} returns the balance of the account of given address.
+\code{eth_getBalance} returns the balance of the account of the given address.
 }
 \examples{
 \donttest{

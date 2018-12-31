@@ -10,7 +10,7 @@ eth_accounts()
 Array of Address - Addresses owned by the client.
 }
 \description{
-\code{eth_accounts} returns a list of addresses owned by client.
+\code{eth_accounts} returns a list of addresses owned by the client.
 }
 \examples{
 \donttest{

@@ -11,7 +11,7 @@ Object - Summary of the information about the pending and queued
   transactions to be inserted in the blockchain.
 }
 \description{
-\code{txpool_inspect} returns the list a textual summary of all the
+\code{txpool_inspect} returns a list with a textual summary of all the
 transactions currently pending for inclusion in the next block(s), as well as
 the ones that are being scheduled for future execution only. This is a method
 specifically tailored to developers to quickly see the transactions in the

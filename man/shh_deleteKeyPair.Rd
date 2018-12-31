@@ -13,7 +13,7 @@ shh_deleteKeyPair(id)
 Boolean - \code{true} on success.
 }
 \description{
-\code{shh_addPrivatekey} deletes the specifies key pair if it exists.
+\code{shh_deleteKeyPair} deletes the specific key pair if it exists.
 }
 \examples{
 \donttest{

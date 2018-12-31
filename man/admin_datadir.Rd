@@ -10,7 +10,7 @@ admin_datadir()
 String - Absolute path being used by the node.
 }
 \description{
-\code{admin_datadir} returns the absolute path the running Geth node.
+\code{admin_datadir} returns the absolute path of the running Geth node.
 }
 \examples{
 \donttest{

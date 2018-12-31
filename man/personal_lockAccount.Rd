@@ -13,8 +13,8 @@ personal_lockAccount(address)
 Boolean - \code{true} if the account has been deleted.
 }
 \description{
-\code{personal_lockAccount} removes the private key with given address from
-memory. The account can no longer be used to send transactions.
+\code{personal_lockAccount} removes the private key with the given address
+from memory. The account can no longer be used to send transactions.
 }
 \examples{
 \donttest{

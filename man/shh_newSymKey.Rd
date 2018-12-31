@@ -11,7 +11,7 @@ String - Symmetric key ID on sucess.
 }
 \description{
 \code{shh_newSymKey} generates a random symmetric key and stores it under an
-ID, which is then returned. Can be used encrypting and decrypting messages
+ID, which is then returned. It can be used encrypting and decrypting messages
 where the key is known to both parties.
 }
 \examples{

@@ -33,7 +33,7 @@ Data - The transaction hash, or the zero hash if the transaction is
 }
 \description{
 \code{personal_sendTransaction} creates new message call transaction or a
-contract creation, if the data field contains code.
+contract if the data field contains code.
 }
 \examples{
 \donttest{

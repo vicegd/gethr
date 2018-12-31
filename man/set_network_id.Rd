@@ -14,7 +14,7 @@ set_network_id(id)
 }
 \examples{
 set_network_id(7000)
-set_network_id("my_network_id")
+set_network_id('my_network_id')
 
 }
 \seealso{

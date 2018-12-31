@@ -12,7 +12,7 @@ debug_backtraceAt(path)
 \description{
 \code{debug_backtraceAt} sets the logging backtrace location. When a
 backtrace location is set and a log message is emitted at that location, the
-stack of the goroutine executing the log statement will be printed to stderr.
+stack of the goroutine executing the log statement will be printed to \code{stderr}.
 }
 \examples{
 \donttest{

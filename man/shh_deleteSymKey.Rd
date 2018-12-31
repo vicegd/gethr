@@ -13,7 +13,7 @@ shh_deleteSymKey(id)
 Boolean - \code{true} on success.
 }
 \description{
-\code{shh_deleteSymKey} deletes the specifies symmetric key if it exists.
+\code{shh_deleteSymKey} deletes the specific symmetric key if it exists.
 }
 \examples{
 \donttest{

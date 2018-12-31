@@ -10,7 +10,7 @@ net_peerCount()
 Integer - Number of connected peers.
 }
 \description{
-\code{net_peerCount} returns number of peers currently connected to the
+\code{net_peerCount} returns the number of peers currently connected to the
 client.
 }
 \examples{

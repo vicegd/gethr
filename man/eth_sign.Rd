@@ -15,7 +15,7 @@ eth_sign(address, message)
 Data - Signature.
 }
 \description{
-\code{eth_sign} returns an Ethereum specific signature with \code{keccak256}.
+\code{eth_sign} returns an Ethereum specific signature with Keccak256.
 }
 \details{
 By adding a prefix to the message makes the calculated signature recognisable

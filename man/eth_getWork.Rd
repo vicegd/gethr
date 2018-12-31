@@ -12,7 +12,7 @@ Object - Information about the block header pow-hash, the seed hash
 }
 \description{
 \code{eth_getWork} returns the hash of the current block, the seedHash, and
-the boundary condition to be met the target.
+the boundary condition to meet the target.
 }
 \examples{
 \donttest{

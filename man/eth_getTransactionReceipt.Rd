@@ -18,7 +18,7 @@ Object - A transaction receipt, or \cite{null} when no receipt was
 }
 \description{
 \code{eth_getTransactionReceipt} returns the receipt of a transaction by
-transaction hash..
+transaction hash.
 }
 \examples{
 \donttest{

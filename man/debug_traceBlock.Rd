@@ -14,7 +14,7 @@ Object - Full stack trace of the block.
 }
 \description{
 \code{debug_traceBlock} returns a full stack trace of all invoked opcodes of
-all transaction that were included included in this block.
+all transaction that were included in this block.
 }
 \examples{
 \donttest{

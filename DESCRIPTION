@@ -9,7 +9,7 @@ Description: Full access to the Geth command line interface for running full Eth
     The officially exposed by Ethereum blockchains (eth, shh, web3, net) and some provided directly 
     by Geth (admin, debug, miner, personal, txpool). For more details on Ethereum, access the project 
     website <https://www.ethereum.org/>. For more details on the Geth client, access the project 
-    website <https://github.com/ethereum/go-ethereum/wiki/geth/>
+    website <https://github.com/ethereum/go-ethereum/wiki/geth/>.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
