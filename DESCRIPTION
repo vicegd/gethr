@@ -1,7 +1,7 @@
 Package: gethr
 Type: Package
 Title: Access to Ethereum-Based Blockchains Through Geth Nodes
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: person("Vicente", "Garcia Diaz", email = "garciavicente@uniovi.es", role = c("aut", "cre"))
 Description: Full access to the Geth command line interface for running full Ethereum nodes. With 
     gethr it is possible to carry out different tasks such as mine ether, transfer funds, create 
